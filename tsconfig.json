@@ -19,9 +19,18 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@enums": ["./src/enums/index.ts"],
+      "@enums/*": ["./src/enums/*"],
+      "@types/*": ["./src/types/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/functional/ImagesDropdown"
+  ],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,96 @@
+'use client';
+
+import Image from 'next/image';
+import Icons from '@/components/ui/Icon/Icons';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel, Pagination, Autoplay } from 'swiper/modules';
+
+import { IEditorialInfiniteSliderProps } from '@/types';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import clsx from 'clsx';
+import SimpleSlide from './SimpleSlide';
+import MinimalistSlide from './MinimalistSlide';
+
+export default function EditorialInfiniteSlider(props: IEditorialInfiniteSliderProps) {
+  const { title, showDescription, description, slides } = props;
+  return (
+    <section className='w-full mb-[200px]'>
+      <div className='grid grid-cols-1 md:grid-cols-12 gap-8 w-[90%] mx-auto md:mb-22 lg:mb-22'>
+        <div className='md:col-span-8'>
+          <h1 className='font-sans text-2xl text-primary font-medium md:text-[80x] lg:text-[80px]'>
+            {title}
+          </h1>
+        </div>
+        {showDescription && (
+          <>
+            <div className='hidden md:block md:col-span-1'></div>
+            <div className='md:col-span-3'>
+              {description && (
+                <p className='font-sans text-primary whitespace-pre-line text-[#596E85] text-[24px] font-light max-w-sm mb-6'>
+                  {description}
+                </p>
+              )}
+
+              <div className='flex items-center justify-start gap-2'>
+                <div className='relative w-6 h-6 overflow-hidden bg-[#596E85] rounded-full'>
+                  <Icons
+                    name='pause.svg'
+                    size={8}
+                    className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                  />
+                </div>
+                <div className='flex items-center gap-1 w-1/3'>
+                  {/* Progress bar */}
+                  <div className='relative flex-1 h-2 bg-gray-100 rounded-full overflow-hidden'>
+                    <div
+                      className='h-full bg-secondary rounded-l-full transition-all duration-300'
+                      style={{ width: `60%` }}
+                    />
+                  </div>
+
+                  {/* Steps */}
+                  <div className='flex items-center gap-1'>
+                    {Array.from({ length: 6 }).map((_, i) => (
+                      <span key={i} className='w-2 h-2 rounded-full bg-gray-100' />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+      <div className='w-full md:w-[95%] md:ml-auto overflow-x-hidden '>
+        <Swiper
+          direction='horizontal'
+          initialSlide={0}
+          slidesPerView={3.2}
+          spaceBetween={20}
+          speed={3000}
+          breakpoints={{
+            320: { slidesPerView: 1.2, spaceBetween: 16 }, // small mobile
+            480: { slidesPerView: 1.5, spaceBetween: 16 },
+            640: { slidesPerView: 2.2, spaceBetween: 20 }, // tablets
+            768: { slidesPerView: 3.5, spaceBetween: 20 }, // larger tablets
+            1024: { slidesPerView: 3.5, spaceBetween: 20 }, // desktop
+          }}
+          freeMode={true} // enables smooth continuous scrolling
+          modules={[Mousewheel, Pagination, Autoplay]}
+          className='h-full'
+        >
+          {slides?.map((slide, idx) => (
+            <SwiperSlide key={idx} className='w-[424px]!'>
+              {slide.type == 'minimalist' ? (
+                <MinimalistSlide {...slide} />
+              ) : (
+                <SimpleSlide {...slide} />
+              )}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
+}

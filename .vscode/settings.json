@@ -1,0 +1,57 @@
+{
+  // ========== Editor & Formatting ==========
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.configPath": ".prettierrc",
+
+  // ========== ESLint ==========
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+
+  // ========== TypeScript / Auto Imports ==========
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.suggest.autoImports": true,
+
+  // ========== File Associations ==========
+  "files.associations": {
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact",
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact"
+  },
+
+  // ========== Exclude / Ignore ==========
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/.git": true
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true
+  },
+
+  // ========== Tailwind / CSS / JSX ==========
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.snippetSuggestions": "top",
+
+  // ========== Optional: React Dev Hints ==========
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.suggest.autoImports": true,
+  
+  // ========== Optional: Next.js Paths / Absolute Imports ==========
+  "typescript.tsdk": "node_modules/typescript/lib",
+}
