@@ -1,41 +1,41 @@
 'use client';
 
 import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
 import { motion, AnimatePresence } from 'framer-motion';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import Avatar from '@/components/ui/Avatar/Avatar';
-import Rating from '../../ui/Rating/Rating';
+import Rating from '@/components/ui/Rating/Rating';
 import { ITestimonialSliderProps } from '@/types';
+import 'swiper/css';
+import { cn } from '../../../utils';
 
 export default function TestimonialSlider({ title, testimonials }: ITestimonialSliderProps) {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  const isMobile = useMediaQuery('(max-width: 768px)');
   const active = testimonials?.[activeIndex];
 
   return (
-    <section className='w-full mb-[200px]'>
+    <section className='w-full py-7 md:pb-[200px]'>
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-4 md:gap-x-6 mb-[56px]'>
         <div className='col-span-12 md:col-span-8'>
-          <h2 className='font-sans font-medium text-[80px] leading-snug md:leading-[120%] whitespace-pre-line'>
+          <h2 className='font-sans font-medium text-5xl md:text-[80px] leading-snug md:leading-[120%] whitespace-pre-line'>
             {title}
           </h2>
         </div>
       </div>
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-6'>
         {/* LEFT — Swiper vertical */}
-        <div className='col-span-2 h-[600px]'>
+        <div className={cn('col-span-12 md:col-span-2', isMobile ? 'w-full mb-4' : 'h-[600px]')}>
           <Swiper
-            direction='vertical'
+            direction={isMobile ? 'horizontal' : 'vertical'}
             slidesPerView='auto'
             spaceBetween={24}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             className='h-full'
           >
             {testimonials?.map((t, idx) => (
-              <SwiperSlide key={idx} style={{ height: 'auto' }}>
+              <SwiperSlide key={idx} style={{ height: 'auto' }} className='h-auto! w-auto!'>
                 <div
                   onClick={() => setActiveIndex(idx)}
                   className={`cursor-pointer transition-opacity ${
@@ -52,7 +52,7 @@ export default function TestimonialSlider({ title, testimonials }: ITestimonialS
         </div>
 
         {/* RIGHT — Framer Motion */}
-        <div className='col-span-10 flex items-center'>
+        <div className='col-span-12 md:col-span-10 flex items-center'>
           <AnimatePresence mode='wait'>
             {active && (
               <motion.div
@@ -61,11 +61,13 @@ export default function TestimonialSlider({ title, testimonials }: ITestimonialS
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -40 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className='w-full pl-[112px]'
+                className='w-full md:pl-[112px]'
               >
-                <Rating value={active.rating} size={32} className='mb-[18px]' />
+                <Rating value={active.rating} size={32} classNames='mb-[18px]' showInfo={true} />
 
-                <p className='font-sans text-[48px] leading-[120%]'>{active.description}</p>
+                <p className='font-sans text-2xl md:text-[48px] leading-[120%]'>
+                  {active.description}
+                </p>
               </motion.div>
             )}
           </AnimatePresence>

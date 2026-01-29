@@ -7,10 +7,10 @@ import Image from 'next/image';
 
 export default function EditorialSliderSimple() {
   return (
-    <section className='w-full mt-[200px]'>
+    <section className='w-full py-7 md:pb-[200px]'>
       <div className='w-[90%] mx-auto mb-5 grid grid-cols-12 gap-x-4 md:gap-x-6 md:mb-[56px]'>
         <div className='col-span-12'>
-          <h2 className='font-sans text-[80px] leading-snug md:leading-[120%] font-medium'>
+          <h2 className='font-sans text-5xl md:text-[80px] leading-snug md:leading-[120%] font-medium'>
             Field of Expertise
           </h2>
         </div>
@@ -23,8 +23,8 @@ export default function EditorialSliderSimple() {
           spaceBetween={20}
           speed={3000}
           breakpoints={{
-            320: { slidesPerView: 1.2, spaceBetween: 16 }, // small mobile
-            480: { slidesPerView: 1.5, spaceBetween: 16 },
+            320: { slidesPerView: 1.1, spaceBetween: 8 }, // small mobile
+            480: { slidesPerView: 1.1, spaceBetween: 8 },
             640: { slidesPerView: 2.2, spaceBetween: 20 }, // tablets
             768: { slidesPerView: 3.5, spaceBetween: 20 }, // larger tablets
             1024: { slidesPerView: 3.5, spaceBetween: 20 }, // desktop
@@ -32,53 +32,53 @@ export default function EditorialSliderSimple() {
           freeMode={true} // enables smooth continuous scrolling
           pagination={false}
         >
-          <SwiperSlide className='w-[424px]! h-[550px]!'>
+          <SwiperSlide className='md:w-[424px]! h-[550px]!'>
             <div className=' bg-red h-full w-full rounded-4xl'>
               <Image
                 src={'/images/services/card1.png'}
                 alt='service one'
                 fill
-                className='object-cover object-center'
+                className='object-contain object-center'
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide className='w-[424px]! h-[550px]!'>
+          <SwiperSlide className='md:w-[424px]! h-[550px]!'>
             <div className=' bg-red h-full w-full rounded-4xl'>
               <Image
                 src={'/images/services/card2.png'}
                 alt='service one'
                 fill
-                className='object-cover object-center'
+                className='object-contain object-center'
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide className='w-[424px]! h-[550px]!'>
+          <SwiperSlide className='md:w-[424px]! h-[550px]!'>
             <div className=' bg-red h-full w-full rounded-4xl'>
               <Image
                 src={'/images/services/card3.png'}
                 alt='service one'
                 fill
-                className='object-cover object-center'
+                className='object-contain object-center'
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide className='w-[424px]! h-[550px]!'>
+          <SwiperSlide className='md:w-[424px]! h-[550px]!'>
             <div className=' bg-red h-full w-full rounded-4xl'>
               <Image
                 src={'/images/services/card1.png'}
                 alt='service one'
                 fill
-                className='object-cover object-center'
+                className='object-contain object-center'
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide className='w-[424px]! h-[550px]!'>
+          <SwiperSlide className='md:w-[424px]! h-[550px]!'>
             <div className=' bg-red h-full w-full rounded-4xl'>
               <Image
                 src={'/images/services/card3.png'}
                 alt='service one'
                 fill
-                className='object-cover object-center'
+                className='object-contain object-center'
               />
             </div>
           </SwiperSlide>

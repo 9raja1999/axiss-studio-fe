@@ -4,7 +4,7 @@ import { IEditorialbrandsProps } from '@/types';
 
 export default function EditorialBrands({ title, brands }: IEditorialbrandsProps) {
   return (
-    <section className='w-full mb-[200px] py-7'>
+    <section className='w-full py-7 md:pb-[200px]'>
       <div className='w-[90%] mx-auto'>
         <h2 className='text-center mb-[48px] font-sans text-[21px] text-[#596E85] font-normal'>
           {title}

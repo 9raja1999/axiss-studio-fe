@@ -6,6 +6,7 @@ import MessagingSlider from '@/components/functional/MessagingSlider/MessagingSl
 import StatCard from '@/components/ui/StatCard/StatCard';
 import { ButtonSizeEnum, ButtonTypeEnum, ButtonVariantEnum } from '@/enums';
 import { IEditorialBannerProps } from '@/types';
+import { useMediaQuery } from '../../../hooks/useMediaQuery';
 
 export default function EditorialBanner({
   title,
@@ -18,11 +19,10 @@ export default function EditorialBanner({
   meshVector,
   statistics,
 }: IEditorialBannerProps) {
-  console.log('BG IMAGES', bgImages);
-
+  const isMobile = useMediaQuery('(max-width: 768px)');
   return (
     <section
-      className='relative md:h-screen w-full bg-no-repeat'
+      className='relative h-screen w-full bg-no-repeat'
       {...(bgImages
         ? {
             style: {
@@ -38,7 +38,7 @@ export default function EditorialBanner({
 
         {/* Center content */}
         <div
-          className='col-span-12 md:col-span-8 w-full flex flex-col items-center justify-end-safe pb-[10%] h-full! bg-no-repeat bg-contain sm:px-6'
+          className='col-span-12 md:col-span-8 w-full flex flex-col items-center justify-center md:justify-end-safe pb-[10%] h-full! bg-no-repeat bg-contain sm:px-6'
           {...(meshVector
             ? {
                 style: {
@@ -67,7 +67,7 @@ export default function EditorialBanner({
 
           {/* Cookies */}
           {cookieBot && (
-            <div className='flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6 px-4 py-3 w-full max-w-[350px] md:w-103 border border-[#E6E6E6] rounded-full bg-tertiary'>
+            <div className='flex flex-row items-center justify-between gap-3 sm:gap-6 px-4 py-3 w-full max-w-[350px] md:w-103 border border-[#E6E6E6] rounded-full bg-tertiary'>
               <p className='font-sans text-sm sm:text-base text-primary font-light mb-2 sm:mb-0 text-center sm:text-left whitespace-nowrap'>
                 The website uses <span className='font-normal'>Cookies</span>
               </p>
@@ -83,7 +83,7 @@ export default function EditorialBanner({
           )}
 
           {statistics && (
-            <div className='flex items-start justify-center divide-x divide-gray-300'>
+            <div className='flex items-start flex-wrap divide-y md:flex-nowrap justify-center  mb-2 gap-2 md:divide-x md:divide-y-0 divide-gray-300'>
               {statistics?.map((stat, idx) => (
                 <StatCard {...stat} />
               ))}
@@ -95,7 +95,7 @@ export default function EditorialBanner({
       </div>
 
       {/* Slider */}
-      {slides && (
+      {slides && !isMobile && (
         <div className='md:absolute bottom-4 md:bottom-[10%] right-0 md:w-1/4 w-full md:transform-none px-4'>
           <MessagingSlider slides={slides} />
         </div>

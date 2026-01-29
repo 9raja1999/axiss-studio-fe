@@ -134,11 +134,11 @@
         },
         {
           "image": { "src": "/images/bulb.png", "width": 112, "height": 112, "alt": "image " },
-          "text": " We design with intention."
+          "text": "We design with intention."
         },
         {
           "image": { "src": "/images/bars.png", "width": 112, "height": 112, "alt": "image " },
-          "text": "We care about outcomes, not just \n aesthetics.."
+          "text": "We care about outcomes, not just aesthetics."
         }
       ]
     }

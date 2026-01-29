@@ -6,6 +6,7 @@ import Divider from '@/components/ui/Divider/Divider';
 import { ButtonSizeEnum, ButtonTypeEnum, ButtonVariantEnum } from '@/enums';
 import { IContactFormProps } from '@/types/contactForm.types';
 import { cn } from '@/utils';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 type FormValues = {
   fullName: string;
@@ -20,6 +21,8 @@ export default function ContactForm({
   subTitle,
   subTitleSize,
 }: IContactFormProps) {
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   const {
     register,
     handleSubmit,
@@ -47,7 +50,7 @@ export default function ContactForm({
       </p>
 
       <h3
-        style={{ fontSize: `${subTitleSize}px` }}
+        style={{ fontSize: isMobile ? '32px' : `${subTitleSize}px` }}
         className={cn(
           'font-sans text-center text-[#001524] font-medium leading-snug md:leading-[120%] break-words',
         )}

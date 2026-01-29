@@ -2,6 +2,7 @@
 
 import clsx from 'clsx';
 import Icons from '../Icon/Icons';
+import { cn } from '../../../utils';
 
 type RatingProps = {
   value: number; // decimal allowed (ex: 3.7)
@@ -9,7 +10,8 @@ type RatingProps = {
   size: number;
   filledColor?: string;
   emptyColor?: string;
-  className?: string;
+  classNames?: string;
+  showInfo: boolean;
 };
 
 export default function Rating({
@@ -18,13 +20,14 @@ export default function Rating({
   size = 32,
   filledColor = '#FFAA51',
   emptyColor = '#EEF0F3',
-  className,
+  classNames,
+  showInfo,
 }: RatingProps) {
   const clamped = clamp(value, 0, max);
   const percentage = (clamped / max) * 100;
 
   return (
-    <div className='flex items-center justify-start mb-[18px]'>
+    <div className={cn('flex items-center justify-start mb-[18px]', classNames)}>
       <div
         className={clsx(`relative inline-block`)}
         aria-label={`Rating ${clamped} out of ${max}`}
@@ -50,9 +53,11 @@ export default function Rating({
           </div>
         </div>
       </div>
-      <div className='ml-[10px] border-l border-[#EEF0F3] pl-[10px] font-sans text-[24px] font-light'>
-        {value.toFixed(1)}
-      </div>
+      {showInfo && (
+        <div className='ml-[10px] border-l border-[#EEF0F3] pl-[10px] font-sans text-[24px] font-light'>
+          {value.toFixed(1)}
+        </div>
+      )}
     </div>
   );
 }

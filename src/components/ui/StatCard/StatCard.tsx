@@ -7,7 +7,7 @@ export default function StatCard({ label, value, labelClass, valueClass }: IStat
       <p
         className={cn(
           labelClass ? labelClass : '',
-          'font-sans text-center text-xl font-normal text-[#596E85] capitalize mb-6 leading-snug md:text-[28px] md:leading-[140%] md:mb-3',
+          'font-sans text-center text-lg font-normal text-[#596E85] capitalize mb-6 leading-snug md:text-[28px] md:leading-[140%] md:mb-3',
         )}
       >
         {label}

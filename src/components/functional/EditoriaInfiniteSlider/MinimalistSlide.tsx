@@ -14,13 +14,9 @@ export default function MinimalistSlide({
   borderWidth,
 }: SlideEditorialInfinite) {
   return (
-    // <div className='relative overflow-hidden w-full min-h-[559px] rounded-3xl'>
-    //   <Image src={image.src} fill className='border object-contain' alt='' />
-    // </div>
     <div className='relative group w-full h-[559px] rounded-3xl overflow-hidden border border-[#F4F4F4] p-[32px]'>
       <div
-        className='absolute inset-0 z-3 opacity-0 hover:opacity-100 transition bg-no-repeat shadow-[0_0_25px_0_#EFEFEF]
-'
+        className='absolute inset-0 z-3 opacity-0 hover:opacity-100 transition bg-no-repeat shadow-[0_0_25px_0_#EFEFEF]'
         style={{
           backgroundImage: "url('/images/vectors/mesh-vector.svg')",
           backgroundPositionX: 'right',
@@ -36,7 +32,7 @@ export default function MinimalistSlide({
             alt='comma image'
             className='border z-2 mb-[12px]'
           />
-          <p className='font-sans text-[32px] font-light whitespace-pre-line leading-snug md:leading-[120%]'>
+          <p className='font-sans text-3xl md:text-[32px] font-light whitespace-pre-line leading-snug md:leading-[120%]'>
             {'Our UI looks good, \n but it doesn’t \n convert.'}
           </p>
         </div>

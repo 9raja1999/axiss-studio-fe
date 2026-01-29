@@ -1,10 +1,13 @@
+'use client';
 import Image from 'next/image';
 import Button from '@/components/ui/Button/Button';
 import { ButtonSizeEnum, ButtonVariantEnum } from '@enums';
-import AnchorLink from '../../ui/AnchorLink/AnchorLink';
-import Divider from '../../ui/Divider/Divider';
+import AnchorLink from '@/components/ui/AnchorLink/AnchorLink';
+import Divider from '@/components/ui/Divider/Divider';
+import { useDrawers } from '@/components/context/DrawersContext';
 
 export default function EditorialFooter() {
+  const { openDrawer } = useDrawers();
   return (
     <footer className='min-h-[400px] bg-primary w-full pt-[80px] md:min-h-[450px] lg:min-h-[512px]'>
       <div className='w-[90%] mx-auto'>
@@ -16,7 +19,11 @@ export default function EditorialFooter() {
               digital products for future.
             </p>
 
-            <Button size={ButtonSizeEnum.SMALL} variant={ButtonVariantEnum.SECONDARY}>
+            <Button
+              size={ButtonSizeEnum.SMALL}
+              variant={ButtonVariantEnum.SECONDARY}
+              onClick={() => openDrawer('contact', {})}
+            >
               Contact Us Now
             </Button>
           </div>
@@ -116,6 +123,7 @@ export default function EditorialFooter() {
                 },
                 position: 'right',
               }}
+              href='#'
             >
               Download & Share PDF
             </Button>
@@ -123,7 +131,7 @@ export default function EditorialFooter() {
         </div>
         <Divider />
         <div className='flex justify-between flex-wrap'>
-          <p className='mb-0 font-sans text-base  capitalize text-[rgba(255,255,255,0.7)]'>
+          <p className='mb-0 font-sans text-base capitalize text-[rgba(255,255,255,0.7)]'>
             © 2021-2026, Axissstudio | All Rights Reserved.
           </p>
           <ul className='mt-0! list-none flex gap-4 mt-2 flex-wrap'>

@@ -3,14 +3,14 @@
 import { motion } from 'framer-motion';
 import Button from '@/components/ui/Button/Button';
 import TestimonialCard from '@/components/functional/TestimonialCard/TestimonialCard';
+import AnchorLink from '@/components/ui/AnchorLink/AnchorLink';
+import { cn } from '@/utils';
 import { ButtonSizeEnum, ButtonVariantEnum } from '@/enums';
 import { IEditorialFullWidthSliderProps } from '@/types';
-import clsx from 'clsx';
-import AnchorLink from '../../ui/AnchorLink/AnchorLink';
 
 export default function EditorialOneColumnScrollable({ slides }: IEditorialFullWidthSliderProps) {
   return (
-    <section className='w-full my-[64px] md:mb-[200px]'>
+    <section className='w-full py-7 md:pb-[200px]'>
       {slides.map((slide, idx) => (
         <motion.div
           key={idx}
@@ -21,8 +21,8 @@ export default function EditorialOneColumnScrollable({ slides }: IEditorialFullW
           transition={{ duration: 0.6 }}
         >
           <div
-            className={clsx(
-              'w-full h-full rounded-[24px] md:rounded-[64px]  grid grid-cols-12 gap-6 md:gap-8 overflow-hidden pt-[64px] pl-[64px]',
+            className={cn(
+              'w-full h-full rounded-[24px] md:rounded-[64px]  grid grid-cols-12 gap-6 md:gap-8 overflow-hidden pt-4 pl-4 md:pt-[64px] md:pl-[64px]',
             )}
             style={{
               backgroundColor: slide?.backgroundColor ? slide.backgroundColor : '#eee',
@@ -40,7 +40,7 @@ export default function EditorialOneColumnScrollable({ slides }: IEditorialFullW
                   <Button
                     size={ButtonSizeEnum.MEDIUM}
                     variant={ButtonVariantEnum.PRIMARY}
-                    classNames={clsx(
+                    classNames={cn(
                       'bg-white text-primary! font-normal mb-8 md:mb-[77px]',
                       slide?.cta?.className,
                     )}
@@ -49,7 +49,7 @@ export default function EditorialOneColumnScrollable({ slides }: IEditorialFullW
                   </Button>
                 </AnchorLink>
               )}
-              <div className='mb-[64px]'>
+              <div className='mb-4 md:mb-[64px]'>
                 <TestimonialCard
                   avatarUrl={slide?.testimonial?.avatar}
                   authorName={slide?.testimonial?.authorName}
@@ -61,7 +61,7 @@ export default function EditorialOneColumnScrollable({ slides }: IEditorialFullW
             </div>
 
             <div
-              className='col-span-12 md:col-span-7 relative bg-no-repeat bg-contain'
+              className='col-span-12 md:col-span-7 relative bg-no-repeat bg-contain h-64 md:h-auto '
               style={{
                 backgroundImage: `url(${slide.image})`,
                 backgroundPosition: 'right bottom',

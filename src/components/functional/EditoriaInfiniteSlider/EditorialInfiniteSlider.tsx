@@ -16,10 +16,10 @@ import MinimalistSlide from './MinimalistSlide';
 export default function EditorialInfiniteSlider(props: IEditorialInfiniteSliderProps) {
   const { title, showDescription, description, slides } = props;
   return (
-    <section className='w-full mb-[200px]'>
-      <div className='grid grid-cols-1 md:grid-cols-12 gap-8 w-[90%] mx-auto md:mb-22 lg:mb-22'>
+    <section className='w-full py-7 md:pb-[200px]'>
+      <div className='grid grid-cols-1 md:grid-cols-12 gap-8 w-[90%] mx-auto mb-6 md:mb-22 lg:mb-22'>
         <div className='md:col-span-8'>
-          <h1 className='font-sans text-2xl text-primary font-medium md:text-[80x] lg:text-[80px]'>
+          <h1 className='font-sans text-4xl text-primary font-medium leading-snug md:leading-[120%] md:text-[80x] lg:text-[80px]'>
             {title}
           </h1>
         </div>
@@ -28,7 +28,7 @@ export default function EditorialInfiniteSlider(props: IEditorialInfiniteSliderP
             <div className='hidden md:block md:col-span-1'></div>
             <div className='md:col-span-3'>
               {description && (
-                <p className='font-sans text-primary whitespace-pre-line text-[#596E85] text-[24px] font-light max-w-sm mb-6'>
+                <p className='font-sans text-2xl whitespace-pre-line text-[#596E85]! leading-snug md:leading-[120%] md:text-[38px] font-normal max-w-sm mb-6'>
                   {description}
                 </p>
               )}
@@ -70,8 +70,8 @@ export default function EditorialInfiniteSlider(props: IEditorialInfiniteSliderP
           spaceBetween={20}
           speed={3000}
           breakpoints={{
-            320: { slidesPerView: 1.2, spaceBetween: 16 }, // small mobile
-            480: { slidesPerView: 1.5, spaceBetween: 16 },
+            320: { slidesPerView: 1.1, spaceBetween: 8 }, // small mobile
+            480: { slidesPerView: 1.1, spaceBetween: 8 },
             640: { slidesPerView: 2.2, spaceBetween: 20 }, // tablets
             768: { slidesPerView: 3.5, spaceBetween: 20 }, // larger tablets
             1024: { slidesPerView: 3.5, spaceBetween: 20 }, // desktop
@@ -81,7 +81,7 @@ export default function EditorialInfiniteSlider(props: IEditorialInfiniteSliderP
           className='h-full'
         >
           {slides?.map((slide, idx) => (
-            <SwiperSlide key={idx} className='w-[424px]!'>
+            <SwiperSlide key={idx} className='md:w-[424px]!'>
               {slide.type == 'minimalist' ? (
                 <MinimalistSlide {...slide} />
               ) : (
