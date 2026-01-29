@@ -1,0 +1,80 @@
+{
+  "editorialBanner": {
+    "title": "About us.",
+    "subTitle": "Axis Studio is a multi-disciplinary design studio built to shape ideas across every dimension.",
+    "description": "We help brands, startups, and enterprises turn complex problems into  \n meaningful digital, visual, and spatial experiences.",
+    "bgImages": [
+      {
+        "image": "/images/vectors/square-left.png",
+        "position": "left 0"
+      },
+      {
+        "image": "/images/vectors/square-right.png",
+        "position": "right 50%"
+      }
+    ],
+    "cookieBot": false,
+    "statistics": [
+      {
+        "label": "Team expert",
+        "value": "70"
+      },
+      {
+        "label": "In the industry since",
+        "value": "2020"
+      },
+      {
+        "label": "Projects completed",
+        "value": "150+"
+      }
+    ]
+  },
+  "editorialTwoColumn": {
+    "title": "Our Philosophy",
+    "subTitle": "We believe great design lives at the intersection of strategy, creativity, and execution.",
+    "compact": true,
+    "imageList": {
+      "title": "That’s why we approach every project with intention:",
+      "list": [
+        {
+          "image": {
+            "src": "/images/time-flask.png",
+            "width": 112,
+            "height": 112,
+            "alt": "image "
+          },
+          "text": "We think long-term."
+        },
+        {
+          "image": { "src": "/images/bulb.png", "width": 112, "height": 112, "alt": "image " },
+          "text": " We design with intention."
+        },
+        {
+          "image": { "src": "/images/bars.png", "width": 112, "height": 112, "alt": "image " },
+          "text": "We care about outcomes, not just \n aesthetics.."
+        }
+      ]
+    }
+  },
+  "faqs": {
+    "title": "Frequently Ask Question",
+    "questions": [
+      {
+        "question": "Why choose Prosperitus Wealth Advisors for personalized financial planning?",
+        "answer": "Clients choose Prosperitus Wealth Advisors for its personalized approach, fiduciary commitment, and ability to align financial strategies with life goals."
+      },
+      {
+        "question": "Why choose Prosperitus Wealth Advisors for personalized financial planning?",
+        "answer": "Clients choose Prosperitus Wealth Advisors for its personalized approach, fiduciary commitment, and ability to align financial strategies with life goals."
+      },
+      {
+        "question": "Why choose Prosperitus Wealth Advisors for personalized financial planning?",
+        "answer": "Clients choose Prosperitus Wealth Advisors for its personalized approach, fiduciary commitment, and ability to align financial strategies with life goals."
+      },
+      {
+        "question": "Why choose Prosperitus Wealth Advisors for personalized financial planning?",
+        "answer": "Clients choose Prosperitus Wealth Advisors for its personalized approach, fiduciary commitment, and ability to align financial strategies with life goals."
+      }
+    ]
+  }
+}

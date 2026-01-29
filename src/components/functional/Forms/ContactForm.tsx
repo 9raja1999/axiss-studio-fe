@@ -3,7 +3,9 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
 import Button from '@/components/ui/Button/Button';
 import Divider from '@/components/ui/Divider/Divider';
-import { ButtonSizeEnum, ButtonTypeEnum, ButtonVariantEnum } from '../../../enums';
+import { ButtonSizeEnum, ButtonTypeEnum, ButtonVariantEnum } from '@/enums';
+import { IContactFormProps } from '@/types/contactForm.types';
+import { cn } from '@/utils';
 
 type FormValues = {
   fullName: string;
@@ -12,7 +14,12 @@ type FormValues = {
   referral: string;
 };
 
-export default function ContactForm() {
+export default function ContactForm({
+  title,
+  titleSize,
+  subTitle,
+  subTitleSize,
+}: IContactFormProps) {
   const {
     register,
     handleSubmit,
@@ -30,11 +37,22 @@ export default function ContactForm() {
 
   return (
     <div className='w-full'>
-      <p className='font-sans text-center text-[#596E85] text-[24px] font-normal leading-snug md:leading-[120%]'>
-        Email us
+      <p
+        style={{ fontSize: `${titleSize}px` }}
+        className={cn(
+          'font-sans text-center text-[#596E85] font-normal leading-snug md:leading-[120%]',
+        )}
+      >
+        {title}
       </p>
-      <h3 className='font-sans text-center text-[#001524] text-[64px] font-medium leading-snug md:leading-[120%]'>
-        info@axissstudio.com
+
+      <h3
+        style={{ fontSize: `${subTitleSize}px` }}
+        className={cn(
+          'font-sans text-center text-[#001524] font-medium leading-snug md:leading-[120%] break-words',
+        )}
+      >
+        {subTitle}
       </h3>
 
       <Divider text='Or' className='mb-[42px]' />
@@ -46,13 +64,15 @@ export default function ContactForm() {
             <input
               type='text'
               placeholder='Full Name'
-              className={`w-full border p-5 rounded-2xl ${
-                errors.fullName ? 'border-red-500' : 'border-[#E7E7E7]'
-              }`}
+              className={cn(
+                `w-full border p-5 rounded-2xl font-sans text-[20px] font-normal`,
+                `placeholder:font-sans text-[20px] font-normal`,
+                errors.fullName ? 'border-red-500' : 'border-[#E7E7E7]',
+              )}
               {...register('fullName', { required: 'Full Name is required' })}
             />
             {errors.fullName && (
-              <p className='text-red-500 text-sm mt-1'>{errors.fullName.message}</p>
+              <p className='text-red-500 text-sm mt-1 font-sans'>{errors.fullName.message}</p>
             )}
           </div>
 
@@ -61,9 +81,11 @@ export default function ContactForm() {
             <input
               type='email'
               placeholder='email@company.com'
-              className={`w-full border p-5 rounded-2xl ${
-                errors.email ? 'border-red-500' : 'border-[#E7E7E7]'
-              }`}
+              className={cn(
+                `w-full border p-5 rounded-2xl font-sans text-[20px] font-normal`,
+                `placeholder:font-sans text-[20px] font-normal`,
+                errors.email ? 'border-red-500' : 'border-[#E7E7E7]',
+              )}
               {...register('email', {
                 required: 'Email is required',
                 pattern: {
@@ -72,16 +94,20 @@ export default function ContactForm() {
                 },
               })}
             />
-            {errors.email && <p className='text-red-500 text-sm mt-1'>{errors.email.message}</p>}
+            {errors.email && (
+              <p className='text-red-500 text-sm mt-1 font-sans'>{errors.email.message}</p>
+            )}
           </div>
 
           {/* Project Description */}
           <div>
             <textarea
               placeholder='Project description'
-              className={`w-full border p-5 rounded-2xl h-[150px] ${
-                errors.projectDescription ? 'border-red-500' : 'border-[#E7E7E7]'
-              }`}
+              className={cn(
+                `w-full border p-5 rounded-2xl h-[150px] font-sans text-[20px] font-normal`,
+                `placeholder:font-sans text-[20px] font-normal`,
+                errors.projectDescription ? 'border-red-500' : 'border-[#E7E7E7]',
+              )}
               {...register('projectDescription', {
                 required: 'Project description is required',
                 minLength: {
@@ -91,7 +117,9 @@ export default function ContactForm() {
               })}
             />
             {errors.projectDescription && (
-              <p className='text-red-500 text-sm mt-1'>{errors.projectDescription.message}</p>
+              <p className='text-red-500 text-sm mt-1 font-sans'>
+                {errors.projectDescription.message}
+              </p>
             )}
           </div>
 
@@ -100,13 +128,15 @@ export default function ContactForm() {
             <input
               type='text'
               placeholder='How did you find Axissstudio'
-              className={`w-full border p-5 rounded-2xl ${
-                errors.referral ? 'border-red-500' : 'border-[#E7E7E7]'
-              }`}
+              className={cn(
+                `w-full border p-5 rounded-2xl font-sans text-[20px] font-normal`,
+                `placeholder:font-sans text-[20px] font-normal`,
+                errors.referral ? 'border-red-500' : 'border-[#E7E7E7]',
+              )}
               {...register('referral', { required: 'This field is required' })}
             />
             {errors.referral && (
-              <p className='text-red-500 text-sm mt-1'>{errors.referral.message}</p>
+              <p className='text-red-500 text-sm mt-1 font-sans'>{errors.referral.message}</p>
             )}
           </div>
         </div>

@@ -10,6 +10,7 @@ import AnchorLink from '@/components/ui/AnchorLink/AnchorLink';
 import { useState } from 'react';
 import Icons from '../../ui/Icon/Icons';
 import ImagesDropdown from '../ImagesDropdown/ImagesDropdown';
+import { useDrawers } from '../../context/DrawersContext';
 
 const caseStudies = [
   { name: 'Mooventis', image: '/images/case-studies/mooventis.png' },
@@ -22,6 +23,7 @@ const caseStudies = [
 
 export default function EditorialHeaderDesktop() {
   const { scrolled } = useScroll(20);
+  const { openDrawer } = useDrawers();
   const [openCaseStudy, setOpenCaseStudy] = useState(false);
 
   return (
@@ -40,6 +42,7 @@ export default function EditorialHeaderDesktop() {
                 classNames='font-sans'
                 size={ButtonSizeEnum.SMALL}
                 variant={ButtonVariantEnum.TERTIARY}
+                href='/'
               >
                 Home
               </Button>
@@ -49,6 +52,7 @@ export default function EditorialHeaderDesktop() {
                 classNames='font-sans'
                 size={ButtonSizeEnum.SMALL}
                 variant={ButtonVariantEnum.TERTIARY}
+                href='/about'
               >
                 About
               </Button>
@@ -99,6 +103,7 @@ export default function EditorialHeaderDesktop() {
             classNames='font-sans'
             size={ButtonSizeEnum.SMALL}
             variant={ButtonVariantEnum.TERTIARY}
+            onClick={() => openDrawer('contact', {})}
           >
             Contact Now
           </Button>
@@ -106,6 +111,7 @@ export default function EditorialHeaderDesktop() {
             classNames='font-sans'
             size={ButtonSizeEnum.SMALL}
             variant={ButtonVariantEnum.SECONDARY}
+            onClick={() => openDrawer('contact', {})}
           >
             Lets Collab.
           </Button>

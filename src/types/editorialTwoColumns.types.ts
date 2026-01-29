@@ -1,7 +1,8 @@
 import { ImageProps } from 'next/image';
-import { ITagProps } from './tag';
+import { ITagProps } from './tag.types';
 
 export interface IEditorialTwoColumnsProps {
+  compact: boolean;
   title: string;
   subTitle: string;
   description: string;

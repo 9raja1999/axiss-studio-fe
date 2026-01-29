@@ -7,11 +7,11 @@ export default function EditorialContact() {
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-4 md:gap-x-6'>
         <div className='col-span-12 md:col-span-5'>
           <h3 className='font-sans whitespace-pre-line text-[56px] font-medium leading-snug md:leading-[120%] mb-[24px]'>
-            {'Have a project idea in mind? \n Let’s get started'}
+            {'Have a project idea in mind? Let’s get started'}
           </h3>
           <p className='font-sans whitespace-pre-line text-[24px] font-normal leading-snug md:leading-[120%] text-[#596E85] mb-[108px]'>
             {
-              'We’ll schedule a call to discuss your idea. After \n discovery sessions we’ll send a proposal, and upon \n approval, we’ll get started.'
+              'We’ll schedule a call to discuss your idea. After discovery sessions we’ll send a proposal, and upon \n approval, we’ll get started.'
             }
           </p>
           <div className='relative w-full h-[280px] md:w-[200px]'>
@@ -39,7 +39,12 @@ export default function EditorialContact() {
         </div>
         <div className='hidden md:block md:col-span-1'></div>
         <div className='col-span-12 md:col-span-6'>
-          <ContactForm />
+          <ContactForm
+            title='Email us'
+            titleSize={24}
+            subTitle='info@axissstudio.com'
+            subTitleSize={64}
+          />
         </div>
       </div>
     </section>

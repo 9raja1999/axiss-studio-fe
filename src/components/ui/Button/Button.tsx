@@ -2,6 +2,7 @@ import { IButtonProps } from '@/types';
 import { ButtonSizeEnum, ButtonVariantEnum } from '@enums';
 import clsx from 'clsx';
 import Icons from '@/components/ui/Icon/Icons';
+import AnchorLink from '../AnchorLink/AnchorLink';
 
 const variantStyles = {
   [ButtonVariantEnum.PRIMARY]: 'bg-primary text-white',
@@ -18,7 +19,7 @@ const sizeStyles = {
 };
 
 export default function Button(props: IButtonProps) {
-  const { size, variant, type, classNames, children, icon, ...restProps } = props;
+  const { size, variant, href, type, classNames, children, icon, ...restProps } = props;
 
   const buttonClass = clsx(
     'font-sans inline-flex items-center justify-center w-fit rounded-full cursor-pointer',
@@ -26,6 +27,26 @@ export default function Button(props: IButtonProps) {
     sizeStyles[size],
     classNames,
   );
+
+  if (href) {
+    return (
+      <AnchorLink href={href}>
+        <button className={buttonClass} {...restProps}>
+          {icon && icon.position === 'left' && (
+            <span className='mr-4'>
+              <Icons {...icon?.config} />
+            </span>
+          )}
+          {children}
+          {icon && icon.position === 'right' && (
+            <span className='ml-4'>
+              <Icons {...icon?.config} />
+            </span>
+          )}
+        </button>
+      </AnchorLink>
+    );
+  }
   return (
     <button className={buttonClass} {...restProps}>
       {icon && icon.position === 'left' && (

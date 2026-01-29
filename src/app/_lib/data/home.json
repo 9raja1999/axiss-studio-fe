@@ -3,6 +3,20 @@
     "title": "Every Axis. One Vision.",
     "subTitle": "Where Every Dimension of Design Comes Together",
     "description": "At Axis Studio, we bring every axis of design including 2D & 3D digital \n experiences into one focused, aligned space",
+    "bgImages": [
+      {
+        "image": "/images/vectors/banner.png",
+        "position": "left 20vh"
+      }
+    ],
+    "cookieBot": true,
+    "wheel": {
+      "text": " Watch our showreel •"
+    },
+    "meshVector": {
+      "image": "/images/vectors/mesh-vector.svg",
+      "position": "center bottom"
+    },
     "slides": [
       {
         "image": "/images/profiles/profile-one.png",
@@ -96,6 +110,7 @@
     "title": "With Axis Studio, you get a single creative partner that understands your product deeply and grows with you.",
     "subTitle": "Tailored to your vision, goals, and growth. One Studio. One Relationship.",
     "description": "We work closely with our clients to turn their goals into unified design experiences that feel right and work seamlessly.",
+    "compact": false,
     "tagsRender": {
       "heading": "helping",
       "tags": [

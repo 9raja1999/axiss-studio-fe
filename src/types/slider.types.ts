@@ -1,11 +1,11 @@
-import { IImageProps } from './image';
+import { IImageProps } from './image.types';
 
 export type SlideEditorialInfinite = {
   type: 'minimalist' | 'simple';
   hoverColor?: string;
   bordered: boolean;
-  borderColor: string;
-  borderWidth: number;
+  borderColor?: string;
+  borderWidth?: number;
   image: IImageProps;
   secondaryImage?: IImageProps;
 };

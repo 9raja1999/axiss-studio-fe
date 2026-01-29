@@ -1,7 +1,7 @@
-import Icons from '../Icon/Icons';
+import Icons from '@/components/ui/Icon/Icons';
 
-export default function CircularButtonSVG() {
-  const text = ' Watch our showreel •'; // dots for nice caps
+export default function WheelContent({ text }: { text: string }) {
+  // const text = ' Watch our showreel •'; // dots for nice caps
   const size = 140; // container size
   const radius = 60; // radius of circle
 

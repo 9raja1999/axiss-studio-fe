@@ -1,4 +1,4 @@
-import { ITagProps } from '@/types/tag';
+import { ITagProps } from '@/types/tag.types';
 import Icons from '../Icon/Icons';
 
 export default function Tag({ name, color, icon }: ITagProps) {

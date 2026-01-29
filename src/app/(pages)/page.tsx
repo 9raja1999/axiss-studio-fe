@@ -1,6 +1,6 @@
+import data from '@/app/_lib/data/home.json';
 import EditorialBanner from '@/components/functional/EditorialBanner/EditorialBanner';
 import EditorialBrands from '@/components/functional/EditorialBrands/EditorialBrands';
-import data from '@/app/_lib/data/home.json';
 import EditorialTwoColumn from '@/components/functional/EditorialTwoColumn/EditorialTwoColumn';
 import EditorialOneColumnScrollable from '@/components/functional/EditorialOneColumnScrollable/EditorialOneColumnScrollable';
 import EditorialInfiniteSlider from '@/components/functional/EditoriaInfiniteSlider/EditorialInfiniteSlider';
@@ -20,12 +20,12 @@ export default function Home() {
         slides={[
           {
             type: 'minimalist',
-            bordered: true,
-            borderColor: '#F4F4F4',
-            borderWidth: 4,
+            bordered: false,
             image: {
-              src: '/images/showcase/kuick-app.png',
+              src: '/images/vectors/square.png',
               alt: 'kuickapp showcase image',
+              className:
+                'absolute rotate-[19deg] right-[-50%] bottom-[-5%] scale-[2.0] object-contain',
             },
           },
           {
@@ -34,8 +34,10 @@ export default function Home() {
             borderColor: '#F4F4F4',
             borderWidth: 4,
             image: {
-              src: '/images/showcase/social-dreams.png',
+              src: '/images/vectors/circle.png',
               alt: 'social dreams showcase image',
+              className:
+                'absolute rotate-[-19deg] right-[-35%] bottom-[-5%] scale-[2.0] object-contain',
             },
           },
           {
@@ -44,38 +46,46 @@ export default function Home() {
             borderColor: '#F4F4F4',
             borderWidth: 4,
             image: {
-              src: '/images/showcase/proctor-parhai.png',
-              alt: 'proctor parhai showcase image',
-            },
-          },
-          {
-            type: 'minimalist',
-            bordered: true,
-            borderColor: '#F4F4F4',
-            borderWidth: 4,
-            image: {
-              src: '/images/showcase/proctor-parhai.png',
-              alt: 'proctor parhai showcase image',
-            },
-          },
-          {
-            type: 'minimalist',
-            bordered: true,
-            borderColor: '#F4F4F4',
-            borderWidth: 4,
-            image: {
-              src: '/images/showcase/proctor-parhai.png',
-              alt: 'proctor parhai showcase image',
-            },
-          },
-          {
-            type: 'minimalist',
-            bordered: true,
-            borderColor: '#F4F4F4',
-            borderWidth: 4,
-            image: {
-              src: '/images/showcase/social-dreams.png',
+              src: '/images/vectors/circle.png',
               alt: 'social dreams showcase image',
+              className:
+                'absolute rotate-[-19deg] right-[-35%] bottom-[-5%] scale-[2.0] object-contain',
+            },
+          },
+          {
+            type: 'minimalist',
+            bordered: true,
+            borderColor: '#F4F4F4',
+            borderWidth: 4,
+            image: {
+              src: '/images/vectors/circle.png',
+              alt: 'social dreams showcase image',
+              className:
+                'absolute rotate-[-19deg] right-[-35%] bottom-[-5%] scale-[2.0] object-contain',
+            },
+          },
+          {
+            type: 'minimalist',
+            bordered: true,
+            borderColor: '#F4F4F4',
+            borderWidth: 4,
+            image: {
+              src: '/images/vectors/circle.png',
+              alt: 'social dreams showcase image',
+              className:
+                'absolute rotate-[-19deg] right-[-35%] bottom-[-5%] scale-[2.0] object-contain',
+            },
+          },
+          {
+            type: 'minimalist',
+            bordered: true,
+            borderColor: '#F4F4F4',
+            borderWidth: 4,
+            image: {
+              src: '/images/vectors/circle.png',
+              alt: 'social dreams showcase image',
+              className:
+                'absolute rotate-[-19deg] right-[-35%] bottom-[-5%] scale-[2.0] object-contain',
             },
           },
         ]}

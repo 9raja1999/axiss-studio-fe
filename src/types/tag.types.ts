@@ -1,4 +1,4 @@
-import { IIconProps } from './icon';
+import { IIconProps } from './icon.types';
 
 export interface ITagProps {
   name: string;
