@@ -2,14 +2,16 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import clsx from 'clsx';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useScroll } from '@/hooks/useScroll';
+import clsx from 'clsx';
 import Button from '@/components/ui/Button/Button';
 import AnchorLink from '@/components/ui/AnchorLink/AnchorLink';
 import Icons from '@/components/ui/Icon/Icons';
-import ImagesDropdown from '../ImagesDropdown/ImagesDropdown';
+import MegaMenuDropdown from '@/components/functional/MegaMenuDropdown/MegaMenuDropdown';
 import { ButtonSizeEnum, ButtonVariantEnum } from '@enums';
-import { useScroll } from '@/hooks/useScroll';
+import { cn } from '@/utils';
+import { useDrawers } from '../../context/DrawersContext';
 
 const caseStudies = [
   { name: 'Mooventis', image: '/images/case-studies/mooventis.png' },
@@ -22,6 +24,7 @@ const caseStudies = [
 
 export default function EditorialHeaderMobile() {
   const { scrolled } = useScroll(20);
+  const { openDrawer } = useDrawers();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const [openCaseStudy, setOpenCaseStudy] = useState(false);
@@ -39,30 +42,21 @@ export default function EditorialHeaderMobile() {
 
   return (
     <header
-      className={clsx(
+      className={cn(
         'w-full fixed top-0 z-50 bg-white shadow-md',
         scrolled ? 'backdrop-blur-xl bg-white/20' : '',
       )}
     >
       <div className='flex items-center justify-between w-[90%] mx-auto py-3'>
-        {/* Hamburger menu */}
-        <button className='p-2 rounded-md' onClick={() => setMenuOpen((prev) => !prev)}>
-          <Icons name='hamburger.svg' size={24} />
-        </button>
-
         {/* Logo */}
         <AnchorLink href='/'>
           <Image src='/logo.svg' alt='Axiss Studio Logo' width={180} height={40} />
         </AnchorLink>
 
-        {/* Optional right CTA */}
-        <Button
-          classNames='font-sans'
-          size={ButtonSizeEnum.SMALL}
-          variant={ButtonVariantEnum.SECONDARY}
-        >
-          Lets Collab.
-        </Button>
+        {/* Hamburger menu */}
+        <button className='p-2 rounded-md' onClick={() => setMenuOpen((prev) => !prev)}>
+          <Icons name='hamburger.svg' size={24} />
+        </button>
       </div>
 
       {/* Slide-down mobile menu */}
@@ -111,17 +105,30 @@ export default function EditorialHeaderMobile() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
                       transition={{ duration: 0.2, ease: 'easeOut' }}
-                      className={clsx(
-                        'w-full mt-3',
-                        'rounded-2xl bg-white backdrop-blur-xl',
-                        'border border-[#E5E7EB] shadow-[0_10px_40px_rgba(0,0,0,0.08)]',
-                      )}
+                      className={clsx('w-full mt-3')}
                     >
-                      <ImagesDropdown data={caseStudies} />
+                      <MegaMenuDropdown data={caseStudies} />
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
+
+              <Button
+                classNames='font-sans w-full!'
+                size={ButtonSizeEnum.SMALL}
+                variant={ButtonVariantEnum.TERTIARY}
+                onClick={() => openDrawer('contact', {})}
+              >
+                Contact Now
+              </Button>
+              <Button
+                classNames='font-sans w-full!'
+                size={ButtonSizeEnum.SMALL}
+                variant={ButtonVariantEnum.SECONDARY}
+                onClick={() => openDrawer('contact', {})}
+              >
+                Lets Collab.
+              </Button>
             </div>
           </motion.div>
         )}

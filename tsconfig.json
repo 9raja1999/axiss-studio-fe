@@ -30,7 +30,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/functional/ImagesDropdown"
+    "src/components/functional/MegaMenuDropdown"
   ],
   "exclude": ["node_modules"]
 }

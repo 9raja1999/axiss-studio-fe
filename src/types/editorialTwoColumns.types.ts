@@ -5,8 +5,8 @@ export interface IEditorialTwoColumnsProps {
   compact: boolean;
   title: string;
   subTitle: string;
-  description: string;
-  tagsRender: {
+  description?: string;
+  tagsRender?: {
     heading: string;
     tags: ITagProps[];
   };

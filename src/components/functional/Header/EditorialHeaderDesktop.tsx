@@ -1,16 +1,14 @@
 'use client';
 
-import Image from 'next/image';
-import clsx from 'clsx';
-import { motion, AnimatePresence } from 'framer-motion';
-import Button from '@/components/ui/Button/Button';
-import { ButtonSizeEnum, ButtonVariantEnum } from '@enums';
-import { useScroll } from '@/hooks/useScroll';
-import AnchorLink from '@/components/ui/AnchorLink/AnchorLink';
 import { useState } from 'react';
-import Icons from '../../ui/Icon/Icons';
-import ImagesDropdown from '../ImagesDropdown/ImagesDropdown';
-import { useDrawers } from '../../context/DrawersContext';
+import Image from 'next/image';
+import { useScroll } from '@/hooks/useScroll';
+import Button from '@/components/ui/Button/Button';
+import AnchorLink from '@/components/ui/AnchorLink/AnchorLink';
+import MegaMenuDropdown from '@/components/functional/MegaMenuDropdown/MegaMenuDropdown';
+import { useDrawers } from '@/components/context/DrawersContext';
+import { ButtonSizeEnum, ButtonVariantEnum } from '@enums';
+import { cn } from '@/utils';
 
 const caseStudies = [
   { name: 'Mooventis', image: '/images/case-studies/mooventis.png' },
@@ -28,7 +26,7 @@ export default function EditorialHeaderDesktop() {
 
   return (
     <header
-      className={clsx(
+      className={cn(
         'w-full sticky transition-all z-2 bg-white',
         scrolled ? 'top-0 py-2 backdrop-blur-xl bg-white/20' : 'top-5',
       )}
@@ -57,35 +55,29 @@ export default function EditorialHeaderDesktop() {
                 About
               </Button>
             </li>
-            <li className='relative'>
+            <li className='relative group'>
+              {/* Case Studies button */}
               <Button
                 classNames='font-sans'
                 size={ButtonSizeEnum.SMALL}
                 variant={ButtonVariantEnum.TERTIARY}
                 icon={{ config: { name: 'carret.svg', size: 16 }, position: 'right' }}
-                onClick={() => setOpenCaseStudy((prev) => !prev)}
               >
                 Case Studies
               </Button>
 
-              <AnimatePresence>
-                {openCaseStudy && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -6 }}
-                    transition={{ duration: 0.2, ease: 'easeOut' }}
-                    className={clsx(
-                      'absolute top-full left-1/2 -translate-x-1/2 mt-3 z-50',
-                      'w-[92vw] max-w-[500px] lg:w-[500px]',
-                      'rounded-2xl bg-white backdrop-blur-xl',
-                      'border border-[#E5E7EB] shadow-[0_10px_40px_rgba(0,0,0,0.08)]',
-                    )}
-                  >
-                    <ImagesDropdown data={caseStudies} />
-                  </motion.div>
+              {/* Dropdown */}
+              <div
+                className={cn(
+                  'absolute top-full left-1/2 -translate-x-1/2',
+                  'opacity-0 pointer-events-none',
+                  'group-hover:opacity-100 group-hover:pointer-events-auto',
+                  'transition-all duration-200',
+                  'pt-3',
                 )}
-              </AnimatePresence>
+              >
+                <MegaMenuDropdown data={caseStudies} />
+              </div>
             </li>
           </ul>
         </nav>

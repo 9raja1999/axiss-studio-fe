@@ -28,7 +28,7 @@ export default function ContactDrawer({ onClose }: IContactDrawerProps) {
         exit={{ x: '100%' }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         className={cn(
-          'fixed top-0 right-0 z-50 h-screen w-full sm:w-2/3 lg:w-1/3 bg-white shadow-lg px-[64px] py-[40px] rounded-l-4xl',
+          'fixed top-0 right-0 z-50 md:h-screen w-full sm:w-2/3 lg:w-1/3 bg-white shadow-lg p-6 md:px-[64px] md:py-[40px] md:rounded-l-4xl',
         )}
       >
         <div className='flex items-center justify-end mb-[8px]'>
