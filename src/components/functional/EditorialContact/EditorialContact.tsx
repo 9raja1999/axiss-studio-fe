@@ -3,7 +3,7 @@ import ContactForm from '../Forms/ContactForm';
 
 export default function EditorialContact() {
   return (
-    <section className='w-full py-7 md:pb-[200px]'>
+    <section className='w-full py-7 md:py-[200px]'>
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-4 md:gap-x-6'>
         <div className='col-span-12 md:col-span-5'>
           <h3 className='font-sans whitespace-pre-line text-5xl md:text-[56px] font-medium leading-snug md:leading-[120%] mb-[24px]'>

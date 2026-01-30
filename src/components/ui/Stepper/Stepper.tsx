@@ -1,41 +1,6 @@
-type Step = {
-  title: string;
-  description: string;
-};
+import { IStepperProps } from '@/types';
 
-export default function Stepper() {
-  const steps: Step[] = [
-    {
-      title: 'Clarity',
-      description:
-        'Design should simplify. Every decision we make is meant to bring focus and understanding.',
-    },
-    {
-      title: 'Precision',
-      description: 'Every detail matters. From layout to motion, precision defines how we work.',
-    },
-    {
-      title: 'Purpose',
-      description:
-        'Each project begins with understanding. We design with intent so every choice supports a goal.',
-    },
-    {
-      title: 'Consistency',
-      description:
-        'Design should feel seamless across every touchpoint. We create systems that stay cohesive and dependable.',
-    },
-    {
-      title: 'Performance',
-      description:
-        'A design is complete only when it works as beautifully as it looks. We build websites that are fast, fluid, and reliable.',
-    },
-    {
-      title: 'Performance',
-      description:
-        'A design is complete only when it works as beautifully as it looks. We build websites that are fast, fluid, and reliable.',
-    },
-  ];
-
+export default function Stepper({ steps }: IStepperProps) {
   return (
     <div className='relative mx-auto'>
       {/* Center spine */}

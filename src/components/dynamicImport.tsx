@@ -7,6 +7,14 @@ import { IDynamicImportProps } from '@/types';
 type DynamicComponent = ComponentType<any>;
 
 const COMPONENTS_MAP: Record<string, DynamicComponent> = {
+  editorialBanner: dynamic(() => import('@/components/functional/EditorialBanner/EditorialBanner')),
+  editorialTwoColumn: dynamic(
+    () => import('@/components/functional/EditorialTwoColumn/EditorialTwoColumn'),
+  ),
+  editorialFAQs: dynamic(() => import('@/components/functional/EditorialFAQs/EditorialFAQs')),
+  editorialStepper: dynamic(
+    () => import('@/components/functional/EditorialStepper/EditorialStepper'),
+  ),
   caseStudyDescription: dynamic(
     () => import('@/components/functional/CaseStudyDescription/CaseStudyDescription'),
   ),

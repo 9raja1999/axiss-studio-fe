@@ -17,3 +17,5 @@ export * from './caseStudyDescription.types';
 export * from './caseStudyImageList.types';
 export * from './caseStudyImageList.types';
 export * from './dynamicImport.types';
+export * from './stepper.types';
+export * from './editorialStepper.types';

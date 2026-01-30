@@ -12,7 +12,7 @@ export default function EditorialTwoColumn({
   compact,
 }: IEditorialTwoColumnsProps) {
   return (
-    <section className='w-full py-7 md:pb-[200px]'>
+    <section className='w-full py-7 md:pt-[200px]'>
       <div
         className={cn(
           'w-[90%] mx-auto grid grid-cols-12 gap-x-4 md:gap-x-6 mb-6',

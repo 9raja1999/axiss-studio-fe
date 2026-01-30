@@ -13,7 +13,7 @@ export default function EditorialFAQs({ title, questions }: IEditorialFaqsProps)
   };
 
   return (
-    <section className='w-full py-[80px]'>
+    <section className='w-full py-7 md:pt-[200px]'>
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-4 md:gap-x-6 mb-[32px]'>
         <div className='hidden md:block md:col-span-1'></div>
         <div className='col-span-12 md:col-span-10'>
