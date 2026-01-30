@@ -96,7 +96,7 @@ export default function EditorialBanner({
 
       {/* Slider */}
       {slides && !isMobile && (
-        <div className='md:absolute bottom-4 md:bottom-[10%] right-0 md:w-1/4 w-full md:transform-none px-4'>
+        <div className='md:absolute bottom-4 md:bottom-[10%] right-0 md:w-1/4 w-full md:transform-none pl-4'>
           <MessagingSlider slides={slides} />
         </div>
       )}
