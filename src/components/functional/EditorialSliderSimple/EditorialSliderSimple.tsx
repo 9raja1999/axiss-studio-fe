@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function EditorialSliderSimple() {
   return (
-    <section className='w-full py-7 md:pb-[200px]'>
+    <section className='w-full py-7 md:pt-[200px]'>
       <div className='w-[90%] mx-auto mb-5 grid grid-cols-12 gap-x-4 md:gap-x-6 md:mb-[56px]'>
         <div className='col-span-12'>
           <h2 className='font-sans text-5xl md:text-[80px] leading-snug md:leading-[120%] font-medium'>

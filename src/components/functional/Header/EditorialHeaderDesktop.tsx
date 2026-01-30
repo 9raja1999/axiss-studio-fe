@@ -28,7 +28,7 @@ export default function EditorialHeaderDesktop() {
     <header
       className={cn(
         'w-full sticky transition-all z-2 bg-white',
-        scrolled ? 'top-0 py-2 backdrop-blur-xl bg-white/20' : 'top-5',
+        scrolled ? 'top-0 py-2 backdrop-blur-xl bg-white/20' : 'top-0 py-2',
       )}
     >
       <div className='grid grid-cols-[1fr_auto_1fr] items-center w-[90%] mx-auto'>

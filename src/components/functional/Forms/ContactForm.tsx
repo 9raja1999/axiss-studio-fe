@@ -60,7 +60,7 @@ export default function ContactForm({
 
       <Divider text='Or' className='mb-[42px]' />
 
-      <form onSubmit={handleSubmit(onSubmit)} noValidate>
+      <form onSubmit={handleSubmit(onSubmit)} noValidate spellCheck>
         <div className='flex flex-col w-full gap-[16px] mb-[32px]'>
           {/* Full Name */}
           <div>

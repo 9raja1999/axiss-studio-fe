@@ -1,8 +1,9 @@
+import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import { IButtonProps } from '@/types';
 import { ButtonSizeEnum, ButtonVariantEnum } from '@enums';
-import clsx from 'clsx';
 import Icons from '@/components/ui/Icon/Icons';
-import AnchorLink from '../AnchorLink/AnchorLink';
+import AnchorLink from '@/components/ui/AnchorLink/AnchorLink';
 
 const variantStyles = {
   [ButtonVariantEnum.PRIMARY]: 'bg-primary text-white',

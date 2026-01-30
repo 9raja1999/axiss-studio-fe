@@ -10,7 +10,7 @@ import { IEditorialFullWidthSliderProps } from '@/types';
 
 export default function EditorialOneColumnScrollable({ slides }: IEditorialFullWidthSliderProps) {
   return (
-    <section className='w-full py-7 md:pb-[200px]'>
+    <section className='w-full py-7 md:pt-[200px]'>
       {slides.map((slide, idx) => (
         <motion.div
           key={idx}

@@ -7,8 +7,8 @@ import { useMediaQuery } from '@/hooks/useMediaQuery';
 import Avatar from '@/components/ui/Avatar/Avatar';
 import Rating from '@/components/ui/Rating/Rating';
 import { ITestimonialSliderProps } from '@/types';
+import { cn } from '@/utils';
 import 'swiper/css';
-import { cn } from '../../../utils';
 
 export default function TestimonialSlider({ title, testimonials }: ITestimonialSliderProps) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -16,7 +16,7 @@ export default function TestimonialSlider({ title, testimonials }: ITestimonialS
   const active = testimonials?.[activeIndex];
 
   return (
-    <section className='w-full py-7 md:pb-[200px]'>
+    <section className='w-full py-7 md:pt-[200px]'>
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-4 md:gap-x-6 mb-[56px]'>
         <div className='col-span-12 md:col-span-8'>
           <h2 className='font-sans font-medium text-5xl md:text-[80px] leading-snug md:leading-[120%] whitespace-pre-line'>

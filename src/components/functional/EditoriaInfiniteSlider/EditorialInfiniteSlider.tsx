@@ -16,7 +16,7 @@ import MinimalistSlide from './MinimalistSlide';
 export default function EditorialInfiniteSlider(props: IEditorialInfiniteSliderProps) {
   const { title, showDescription, description, slides } = props;
   return (
-    <section className='w-full py-7 md:pb-[200px]'>
+    <section className='w-full py-7 md:pt-[200px]'>
       <div className='grid grid-cols-1 md:grid-cols-12 gap-8 w-[90%] mx-auto mb-6 md:mb-22 lg:mb-22'>
         <div className='md:col-span-8'>
           <h1 className='font-sans text-4xl text-primary font-medium leading-snug md:leading-[120%] md:text-[80x] lg:text-[80px]'>

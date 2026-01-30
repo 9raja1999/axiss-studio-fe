@@ -42,7 +42,7 @@ export default function ContactDrawer({ onClose }: IContactDrawerProps) {
         </div>
 
         {/* Scrollable body */}
-        <div className='drawer-body overflow-y-auto flex-1'>
+        <div className='drawer-body overflow-y-auto flex-1 scrollbar-hide'>
           <ContactForm
             title='Email us'
             titleSize={16}
