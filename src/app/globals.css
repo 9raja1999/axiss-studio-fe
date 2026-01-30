@@ -23,6 +23,7 @@
   --color-secondary-light: var(--secondary-light);
   /* fonts */
   --font-sans: var(--font-sans);
+  --font-urbanist: var(--font-urbanist);
 }
 
 body {

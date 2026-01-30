@@ -29,7 +29,9 @@ export default function MegaMenuDropdown({ data }: IImagesDropdownProps) {
               )}
               onMouseEnter={() => setSelectedCase(cs)}
             >
-              {selectedCase.name === cs.name ? `• ${cs.name}` : cs.name}
+              <AnchorLink href='/case-study/case' classNames='text-[14px]!'>
+                {selectedCase.name === cs.name ? `• ${cs.name}` : cs.name}
+              </AnchorLink>
             </li>
           ))}
         </ul>

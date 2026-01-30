@@ -1,0 +1,173 @@
+[
+  {
+    "name": "caseStudyDescription",
+    "data": {
+      "tagLine": " Some TAGLINE here...",
+      "title": "Building a Data-Driven Fleet & Route Management Solution",
+      "description": "Lorem ipsum dolor sit amet consectetur. Enim bibendum pharetra vel eget venenatis sed. Egestas ac ipsum et morbi duis eget. Euismod nec mattis nulla amet. Magna eget nunc semper donec. Scelerisque eros.",
+      "logo": "/logos/partners/mooventis.svg",
+      "deliveribles": { "label": "Deliveribles", "value": "User Experience & User Interface" },
+      "platforms": { "label": "Platforms:", "value": "Software as a Service (SaaS)" },
+      "mainImage": {
+        "src": "/images/case-studies/mooventis-dashboard.png",
+        "alt": "main image"
+      },
+      "testimonial": {
+        "review": "Much respect you really master your subject, and it shows. Honestly, nothing to say except bravo!",
+        "avatar": {
+          "image": "/images/profiles/profile-one.png",
+          "size": 72,
+          "color": "#D2D2D2"
+        },
+        "title": "Bedad Sofien",
+        "subTitle": "CEO @ MOOVENTIS"
+      },
+      "images": [
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "main image"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard-sub1.png",
+          "alt": "main image"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard-sub1.png",
+          "alt": "main image"
+        }
+      ]
+    }
+  },
+  {
+    "name": "caseStudyImageList",
+    "data": {
+      "title": "Led end-to-end UX/UI design for Mooventis, translating 15+ role-based workflows into an efficient, scalable system aligned with real business operations.",
+      "description": "Flows that are the part of this application",
+      "tagList": {
+        "list": [
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" }
+        ],
+        "limit": 8,
+        "limitTagClassName": "md:text-[16px]! md:font-normal!"
+      },
+      "images": [
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "caseStudySingleColumn",
+    "data": {
+      "title": "Designed a customer-facing application that simplifies user interaction, strengthens trust, and supports business goals through a clear and accessible UX.",
+      "description": "Built with core business capabilities like cost and trip calculation, tender simulations, and secure third-party integrations including Stripe to support real-world operations.",
+      "rowHeight": "783px",
+      "containerWidth": "90%",
+      "colSize": 12,
+      "images": [
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1",
+          "colSpan": 12,
+          "rowSpan": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "caseStudyImageList",
+    "data": {
+      "title": "Led end-to-end UX/UI design for Mooventis, translating 15+ role-based workflows into an efficient, scalable system aligned with real business operations.",
+      "description": "Flows that are the part of this application",
+      "tagList": {
+        "list": [
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" },
+          { "name": "user management", "classNames": "md:text-[16px]! md:font-normal!" }
+        ],
+        "limit": 8,
+        "limitTagClassName": "md:text-[16px]! md:font-normal!"
+      },
+      "images": [
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        },
+        {
+          "src": "/images/case-studies/mooventis-dashboard.png",
+          "alt": "image 1"
+        }
+      ]
+    }
+  }
+]

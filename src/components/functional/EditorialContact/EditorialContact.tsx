@@ -14,9 +14,9 @@ export default function EditorialContact() {
               'We’ll schedule a call to discuss your idea. After discovery sessions we’ll send a proposal, and upon \n approval, we’ll get started.'
             }
           </p>
-          <div className='relative w-full '>
+          <div className='relative w-full h-[280px] md:w-[200px]'>
             {/* Image container */}
-            <div className='relative w-full h-[280px] md:w-[200px] rounded-4xl bg-[#596E85] overflow-hidden'>
+            <div className='relative w-full h-full rounded-4xl bg-[#596E85] overflow-hidden'>
               <Image
                 src='/images/profiles/profile-one.png'
                 alt='profile image'

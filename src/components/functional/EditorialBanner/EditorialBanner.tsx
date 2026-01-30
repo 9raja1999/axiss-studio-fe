@@ -38,7 +38,7 @@ export default function EditorialBanner({
 
         {/* Center content */}
         <div
-          className='col-span-12 md:col-span-8 w-full flex flex-col items-center justify-center md:justify-end-safe pb-[10%] h-full! bg-no-repeat bg-contain sm:px-6'
+          className='col-span-12 md:col-span-8 w-full flex flex-col items-center justify-center md:justify-end-safe pb-[5%] h-full! bg-no-repeat bg-contain sm:px-6'
           {...(meshVector
             ? {
                 style: {

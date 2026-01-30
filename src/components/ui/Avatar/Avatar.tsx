@@ -1,16 +1,10 @@
-import clsx from 'clsx';
-
-interface IAvatarProps {
-  image: string;
-  size: number;
-  color: string;
-  className: string;
-}
+import { cn } from '@/utils';
+import { IAvatarProps } from '@/types';
 
 export default function Avatar({ image, size, color, className }: IAvatarProps) {
   return (
     <div
-      className={clsx('rounded-full overflow-hidden border', className)}
+      className={cn('rounded-full overflow-hidden border', className)}
       style={{
         width: size,
         height: size,

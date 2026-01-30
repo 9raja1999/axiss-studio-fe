@@ -1,7 +1,14 @@
-import { Inter } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
 import localFont from 'next/font/local';
 import type { Metadata } from 'next';
+import NextTopLoader from 'nextjs-toploader';
+
 import './globals.css';
+
+const urbanist = Urbanist({
+  display: 'swap',
+  variable: '--font-urbanist',
+});
 
 const gillSans = localFont({
   src: [
@@ -42,7 +49,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${gillSans.variable} antialiased`}>{children}</body>
+      <body className={`${gillSans.variable} ${urbanist.variable} antialiased`}>
+        <NextTopLoader color='#f95e27' zIndex={1600} showSpinner={false} />
+        {children}
+      </body>
     </html>
   );
 }
