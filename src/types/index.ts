@@ -19,3 +19,4 @@ export * from './caseStudyImageList.types';
 export * from './dynamicImport.types';
 export * from './stepper.types';
 export * from './editorialStepper.types';
+export * from './caseStudySlides.types';

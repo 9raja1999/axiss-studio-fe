@@ -1,17 +1,14 @@
 'use client';
-
-import Image from 'next/image';
 import Icons from '@/components/ui/Icon/Icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Pagination, Autoplay } from 'swiper/modules';
 
 import { IEditorialInfiniteSliderProps } from '@/types';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import clsx from 'clsx';
 import SimpleSlide from './SimpleSlide';
 import MinimalistSlide from './MinimalistSlide';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function EditorialInfiniteSlider(props: IEditorialInfiniteSliderProps) {
   const { title, showDescription, description, slides } = props;
@@ -62,7 +59,7 @@ export default function EditorialInfiniteSlider(props: IEditorialInfiniteSliderP
           </>
         )}
       </div>
-      <div className='w-full md:w-[95%] md:ml-auto overflow-x-hidden '>
+      <div className='w-full md:w-[95%] md:ml-auto overflow-x-hidden'>
         <Swiper
           direction='horizontal'
           initialSlide={0}

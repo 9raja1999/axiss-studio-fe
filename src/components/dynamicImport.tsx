@@ -24,6 +24,7 @@ const COMPONENTS_MAP: Record<string, DynamicComponent> = {
   caseStudySingleColumn: dynamic(
     () => import('@/components/functional/CaseStudySingleColumn/CaseStudySingleColumn'),
   ),
+  caseStudySlider: dynamic(() => import('@/components/functional/CaseStudySlider/CaseStudySlider')),
 };
 
 export default function DynamicImport({ name, data }: IDynamicImportProps) {

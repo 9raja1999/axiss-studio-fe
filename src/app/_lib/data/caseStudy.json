@@ -169,5 +169,56 @@
         }
       ]
     }
+  },
+  {
+    "name": "caseStudySlider",
+    "data": {
+      "title": "Interested in seeing more of our work? Let’s explore what we’ve been building.",
+      "description": "Building Experiences. Set Standards.",
+      "slides": [
+        {
+          "bgColor": "#52B788",
+          "image": {
+            "src": "/images/case-studies/roosters.png",
+            "alt": "image"
+          }
+        },
+        {
+          "bgColor": "#F95E27",
+          "image": {
+            "src": "/images/case-studies/proctor-parhai-dashboard.png",
+            "alt": "image"
+          }
+        },
+        {
+          "bgColor": "#001524",
+          "image": {
+            "src": "/images/case-studies/little-book-dashboard.png",
+            "alt": "image"
+          }
+        },
+        {
+          "bgColor": "#52B788",
+          "image": {
+            "src": "/images/case-studies/roosters.png",
+            "alt": "image"
+          }
+        },
+        {
+          "bgColor": "#F95E27",
+          "image": {
+            "src": "/images/case-studies/proctor-parhai-dashboard.png",
+            "alt": "image"
+          }
+        },
+        {
+          "bgColor": "#001524",
+          "image": {
+            "src": "/images/case-studies/little-book-dashboard.png",
+            "alt": "image"
+          }
+        }
+      ]
+    }
   }
 ]
