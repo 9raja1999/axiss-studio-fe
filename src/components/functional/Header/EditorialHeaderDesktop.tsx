@@ -20,15 +20,15 @@ const caseStudies = [
 ];
 
 export default function EditorialHeaderDesktop() {
-  const { scrolled } = useScroll(20);
+  const { scrolled } = useScroll(10);
   const { openDrawer } = useDrawers();
   const [openCaseStudy, setOpenCaseStudy] = useState(false);
 
   return (
     <header
       className={cn(
-        'w-full fixed transition-all z-2 bg-white',
-        scrolled ? 'top-0 py-2 backdrop-blur-xl bg-white/20' : 'top-0 py-3',
+        'w-full fixed transition-all z-2 bg-transparent',
+        scrolled ? 'top-0 py-[15px] backdrop-blur-xl bg-white/20' : 'top-0 py-[40px]',
       )}
     >
       <div className='grid grid-cols-[1fr_auto_1fr] items-center w-[90%] mx-auto'>

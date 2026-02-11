@@ -1,3 +1,4 @@
+import { IAnchorLinkProps } from './anchorLink.types';
 import { IImageProps } from './image.types';
 
 export type SlideEditorialInfinite = {
@@ -8,12 +9,27 @@ export type SlideEditorialInfinite = {
   borderWidth?: number;
   image: IImageProps;
   secondaryImage?: IImageProps;
+  title?: string;
 };
 export interface IEditorialInfiniteSliderProps {
   title: string;
   showDescription: boolean;
   description?: string;
   slides: SlideEditorialInfinite[];
+}
+
+export interface IExpertiseSliderProps {
+  title: string;
+  slides: Array<{
+    bgColor: string;
+    design: string;
+    serviceCode: string;
+    title: string;
+    description: string;
+    cta: IAnchorLinkProps;
+    primaryImage: IImageProps;
+    secondaryImage: IImageProps;
+  }>;
 }
 
 export interface IEditorialFullWidthSliderProps {

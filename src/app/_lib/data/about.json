@@ -8,11 +8,11 @@
       "bgImages": [
         {
           "image": "/images/vectors/square-left.png",
-          "position": "left 0"
+          "position": "left 150px"
         },
         {
           "image": "/images/vectors/square-right.png",
-          "position": "right 50%"
+          "position": "right 350px"
         }
       ],
       "cookieBot": false,

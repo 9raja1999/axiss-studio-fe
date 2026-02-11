@@ -5,7 +5,9 @@ export default function EditorialContact() {
   return (
     <section className='w-full py-7 md:py-[200px]'>
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-4 md:gap-x-6'>
-        <div className='col-span-12 md:col-span-5'>
+        <div className='hidden md:block md:col-span-1'></div>
+
+        <div className='col-span-12 md:col-span-4'>
           <h3 className='font-sans whitespace-pre-line text-5xl md:text-[56px] font-medium leading-snug md:leading-[120%] mb-[24px]'>
             {'Have a project idea in mind? Let’s get started'}
           </h3>
@@ -38,7 +40,7 @@ export default function EditorialContact() {
           </div>
         </div>
         <div className='hidden md:block md:col-span-1'></div>
-        <div className='col-span-12 md:col-span-6'>
+        <div className='col-span-12 md:col-span-5'>
           <ContactForm
             title='Email us'
             titleSize={24}
@@ -46,6 +48,7 @@ export default function EditorialContact() {
             subTitleSize={64}
           />
         </div>
+        <div className='hidden md:block md:col-span-1'></div>
       </div>
     </section>
   );

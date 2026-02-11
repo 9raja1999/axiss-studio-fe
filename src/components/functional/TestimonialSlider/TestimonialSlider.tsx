@@ -18,14 +18,17 @@ export default function TestimonialSlider({ title, testimonials }: ITestimonialS
   return (
     <section className='w-full py-7 md:pt-[200px]'>
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-4 md:gap-x-6 mb-[56px]'>
-        <div className='col-span-12 md:col-span-8'>
+        <div className='hidden md:block md:col-span-1'></div>
+        <div className='col-span-12 md:col-span-10'>
           <h2 className='font-sans font-medium text-5xl md:text-[80px] leading-snug md:leading-[120%] whitespace-pre-line'>
             {title}
           </h2>
         </div>
+        <div className='hidden md:block md:col-span-1'></div>
       </div>
       <div className='w-[90%] mx-auto grid grid-cols-12 gap-x-6'>
         {/* LEFT — Swiper vertical */}
+        <div className='hidden md:block md:col-span-1'></div>
         <div className={cn('col-span-12 md:col-span-2', isMobile ? 'w-full mb-4' : 'h-[600px]')}>
           <Swiper
             direction={isMobile ? 'horizontal' : 'vertical'}
@@ -52,7 +55,7 @@ export default function TestimonialSlider({ title, testimonials }: ITestimonialS
         </div>
 
         {/* RIGHT — Framer Motion */}
-        <div className='col-span-12 md:col-span-10 flex items-center'>
+        <div className='col-span-12 md:col-span-8 flex items-center'>
           <AnimatePresence mode='wait'>
             {active && (
               <motion.div
@@ -72,6 +75,7 @@ export default function TestimonialSlider({ title, testimonials }: ITestimonialS
             )}
           </AnimatePresence>
         </div>
+        <div className='hidden md:block md:col-span-1'></div>
       </div>
     </section>
   );

@@ -11,6 +11,19 @@ const COMPONENTS_MAP: Record<string, DynamicComponent> = {
   editorialTwoColumn: dynamic(
     () => import('@/components/functional/EditorialTwoColumn/EditorialTwoColumn'),
   ),
+  editorialBrands: dynamic(() => import('@/components/functional/EditorialBrands/EditorialBrands')),
+  editorialInfiniteSlider: dynamic(
+    () => import('@/components/functional/EditoriaInfiniteSlider/EditorialInfiniteSlider'),
+  ),
+  expertiseSlider: dynamic(() => import('@/components/functional/ExpertiseSlider/ExpertiseSlider')),
+  editorialOneColumnScrollable: dynamic(
+    () =>
+      import('@/components/functional/EditorialOneColumnScrollable/EditorialOneColumnScrollable'),
+  ),
+  editorialPhases: dynamic(() => import('@/components/functional/EditorialPhases/EditorialPhases')),
+  testimonialSlider: dynamic(
+    () => import('@/components/functional/TestimonialSlider/TestimonialSlider'),
+  ),
   editorialFAQs: dynamic(() => import('@/components/functional/EditorialFAQs/EditorialFAQs')),
   editorialStepper: dynamic(
     () => import('@/components/functional/EditorialStepper/EditorialStepper'),

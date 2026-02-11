@@ -19,7 +19,7 @@ export default function CaseStudyDescription({
       <div className='w-[90%] mx-auto grid grid-cols-12 mb-6 md:mb-[80px]'>
         <div className='hidden md:block md:col-span-1'></div>
         <div className='col-span-12 md:col-span-10'>
-          <p className='font-sans text-base text-[#596E85] text-left font-normal mb-4 md:mb-[24px]'>
+          <p className='font-sans text-base text-[#596E85] text-left font-normal mb-4 md:mb-[24px] mt-5 md:mt-[192px]'>
             {tagLine}
           </p>
           <h1 className='font-sans text-2xl md:text-[80px] font-medium leading-snug md:leading-[100%] mb-4 md:mb-[24px]'>

@@ -49,7 +49,7 @@ export default function CaseStudySlider({ title, description, slides }: ICaseStu
               <div className='flex items-center justify-start gap-2'>
                 <button
                   onClick={toggleAutoplay}
-                  className='relative w-6 h-6 overflow-hidden bg-[#596E85] rounded-full'
+                  className='relative w-6 h-6 overflow-hidden bg-[#596E85] rounded-full cursor-pointer'
                 >
                   <Icons
                     name={isPlaying ? 'pause.svg' : 'play.svg'}

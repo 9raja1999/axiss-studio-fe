@@ -1,0 +1,36 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.9" cx="38" cy="38" r="12" fill="white"/>
+<circle opacity="0.8" cx="38" cy="70" r="12" fill="white"/>
+<circle opacity="0.7" cx="38" cy="102" r="12" fill="white"/>
+<circle opacity="0.6" cx="38" cy="134" r="12" fill="white"/>
+<circle opacity="0.5" cx="38" cy="166" r="12" fill="white"/>
+<circle opacity="0.4" cx="38" cy="198" r="12" fill="white"/>
+<circle opacity="0.3" cx="38" cy="230" r="12" fill="white"/>
+<circle opacity="0.2" cx="38" cy="262" r="12" fill="white"/>
+<circle opacity="0.8" cx="166" cy="38" r="12" fill="white"/>
+<circle opacity="0.7" cx="166" cy="70" r="12" fill="white"/>
+<circle opacity="0.6" cx="166" cy="102" r="12" fill="white"/>
+<circle opacity="0.5" cx="166" cy="134" r="12" fill="white"/>
+<circle opacity="0.2" cx="134" cy="38" r="12" fill="white"/>
+<circle opacity="0.3" cx="134" cy="70" r="12" fill="white"/>
+<circle opacity="0.4" cx="134" cy="102" r="12" fill="white"/>
+<circle opacity="0.5" cx="134" cy="134" r="12" fill="white"/>
+<circle opacity="0.6" cx="134" cy="166" r="12" fill="white"/>
+<circle opacity="0.7" cx="134" cy="198" r="12" fill="white"/>
+<circle opacity="0.8" cx="134" cy="230" r="12" fill="white"/>
+<circle opacity="0.9" cx="134" cy="262" r="12" fill="white"/>
+<circle opacity="0.4" cx="166" cy="166" r="12" fill="white"/>
+<circle opacity="0.3" cx="166" cy="198" r="12" fill="white"/>
+<circle opacity="0.2" cx="166" cy="230" r="12" fill="white"/>
+<circle opacity="0.1" cx="166" cy="262" r="12" fill="white"/>
+<circle opacity="0.1" cx="261" cy="38" r="12" fill="white"/>
+<circle opacity="0.2" cx="261" cy="70" r="12" fill="white"/>
+<circle opacity="0.3" cx="261" cy="102" r="12" fill="white"/>
+<circle opacity="0.4" cx="261" cy="134" r="12" fill="white"/>
+<circle opacity="0.5" cx="261" cy="166" r="12" fill="white"/>
+<circle opacity="0.6" cx="261" cy="198" r="12" fill="white"/>
+<circle opacity="0.7" cx="261" cy="230" r="12" fill="white"/>
+<circle opacity="0.8" cx="261" cy="262" r="12" fill="white"/>
+<rect opacity="0.2" x="59" y="26" width="55" height="248" fill="white"/>
+<rect opacity="0.2" x="186" y="26" width="55" height="248" fill="white"/>
+</svg>

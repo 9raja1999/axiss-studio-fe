@@ -22,7 +22,7 @@ export default function EditorialBanner({
   const isMobile = useMediaQuery('(max-width: 768px)');
   return (
     <section
-      className='relative h-screen w-full bg-no-repeat'
+      className='relative w-full h-screen bg-no-repeat bg-bottom'
       {...(bgImages
         ? {
             style: {
@@ -38,7 +38,7 @@ export default function EditorialBanner({
 
         {/* Center content */}
         <div
-          className='col-span-12 md:col-span-8 w-full flex flex-col items-center justify-center md:justify-end-safe pb-[5%] h-full! bg-no-repeat bg-contain sm:px-6'
+          className='col-span-12 md:col-span-8 w-full flex flex-col items-center justify-start md:justify-start mt-[192px]! h-full! bg-no-repeat bg-contain sm:px-6'
           {...(meshVector
             ? {
                 style: {
@@ -96,7 +96,9 @@ export default function EditorialBanner({
 
       {/* Slider */}
       {slides && !isMobile && (
-        <div className='md:absolute bottom-4 md:bottom-[10%] right-0 md:w-1/4 w-full md:transform-none pl-4'>
+        <div className='md:absolute bottom-4 md:bottom-[10%] right-0 md:w-1/4 w-full md:transform-none overflow-visible'>
+          <div className='pointer-events-none absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-[#FFFFFF] to-transparent z-10' />
+
           <MessagingSlider slides={slides} />
         </div>
       )}

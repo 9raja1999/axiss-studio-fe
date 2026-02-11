@@ -12,9 +12,10 @@ export default function MinimalistSlide({
   bordered,
   borderColor,
   borderWidth,
+  title,
 }: SlideEditorialInfinite) {
   return (
-    <div className='relative group w-full h-[559px] rounded-3xl overflow-hidden border border-[#F4F4F4] p-[32px]'>
+    <div className='relative group w-full h-[559px] rounded-3xl overflow-hidden border border-[#F4F4F4] p-[32px] pr-0'>
       <div
         className='absolute inset-0 z-3 opacity-0 hover:opacity-100 transition bg-no-repeat shadow-[0_0_25px_0_#EFEFEF]'
         style={{
@@ -32,9 +33,11 @@ export default function MinimalistSlide({
             alt='comma image'
             className='border z-2 mb-[12px]'
           />
-          <p className='font-sans text-3xl md:text-[32px] font-light whitespace-pre-line leading-snug md:leading-[120%]'>
-            {'Our UI looks good, \n but it doesn’t \n convert.'}
-          </p>
+          {title && (
+            <p className='font-sans text-3xl md:text-[32px] font-light whitespace-pre-line leading-snug md:leading-[120%] md:pr-[138px]'>
+              {title}
+            </p>
+          )}
         </div>
 
         <div className='w-[82px] h-[56px] group-hover:bg-secondary bg-[#E9E9E9] transition-all rounded-full relative overflow-hidden'>
@@ -46,15 +49,14 @@ export default function MinimalistSlide({
           />
         </div>
       </div>
-      <img
-        src={image?.src as string}
-        alt=''
-        className={clsx(
-          'z-1',
-          image.className ??
-            'absolute rotate-[19deg] right-[-50%] bottom-[-10%] scale-[2.5] object-contain',
-        )}
-      />
+      <div className='hidden md:block w-[330px] h-[420px]! absolute right-0 bottom-0'>
+        <Image
+          src={image?.src as string}
+          alt={image?.alt ?? ''}
+          fill
+          className={clsx('z-1 object-right object-bottom border', image.className)}
+        />
+      </div>
     </div>
   );
 }

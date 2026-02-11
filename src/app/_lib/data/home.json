@@ -1,244 +1,511 @@
-{
-  "editorialBanner": {
-    "title": "Every Axis. One Vision.",
-    "subTitle": "Where Every Dimension of Design Comes Together",
-    "description": "At Axis Studio, we bring every axis of design including 2D & 3D digital \n experiences into one focused, aligned space",
-    "bgImages": [
-      {
-        "image": "/images/vectors/banner.png",
-        "position": "left 20vh"
-      }
-    ],
-    "cookieBot": true,
-    "wheel": {
-      "text": " Watch our showreel •"
-    },
-    "meshVector": {
-      "image": "/images/vectors/mesh-vector.svg",
-      "position": "center bottom"
-    },
-    "slides": [
-      {
-        "image": "/images/profiles/profile-one.png",
-        "bgColor": "#596E85",
-        "title": "Olena Kovalenko",
-        "subTitle": "CEO",
-        "message": "Ola!"
-      },
-      {
-        "image": "/images/profiles/profile-two.png",
-        "bgColor": "#596E85",
-        "title": "Raja Muhammad",
-        "subTitle": "CEO",
-        "message": "Ola!"
-      },
-      {
-        "image": "/images/profiles/profile-one.png",
-        "bgColor": "#596E85",
-        "title": "Olena Kovalenko",
-        "subTitle": "CEO",
-        "message": "Ola!"
-      }
-    ]
-  },
-  "editorialBrands": {
-    "title": "Trusted by growing brands",
-    "brands": [
-      {
-        "image": "/logos/partners/mooventis.svg",
-        "brandName": "Mooventis"
-      },
-      {
-        "image": "/logos/partners/galaxy.svg",
-        "brandName": "Galaxy"
-      },
-      {
-        "image": "/logos/partners/hana.svg",
-        "brandName": "Hana"
-      },
-      {
-        "image": "/logos/partners/james.svg",
-        "brandName": "james"
-      },
-      {
-        "image": "/logos/partners/markel.svg",
-        "brandName": "markel"
-      },
-      {
-        "image": "/logos/partners/proctor-parhai.svg",
-        "brandName": "proctor parhai"
-      },
-      {
-        "image": "/logos/partners/proroster.svg",
-        "brandName": "proroster"
-      },
-      {
-        "image": "/logos/partners/social-dreams.svg",
-        "brandName": "social dreams"
-      },
-      {
-        "image": "/logos/partners/ux-bolt.svg",
-        "brandName": "ux bolt"
-      },
-      {
-        "image": "/logos/partners/vitrivian.svg",
-        "brandName": "vitrivian"
-      },
-      {
-        "image": "/logos/partners/rainbow.svg",
-        "brandName": "rainbow"
-      },
-      {
-        "image": "/logos/partners/kuickapp.svg",
-        "brandName": "Kuickapp"
-      },
-      {
-        "image": "/logos/partners/little-book.svg",
-        "brandName": "little book"
-      },
-      {
-        "image": "/logos/partners/tutor-bay.svg",
-        "brandName": "titor bay"
-      },
-      {
-        "image": "/logos/partners/depharma.svg",
-        "brandName": "De pharma"
-      }
-    ]
-  },
-  "editorialTwoColumn": {
-    "title": "With Axis Studio, you get a single creative partner that understands your product deeply and grows with you.",
-    "subTitle": "Tailored to your vision, goals, and growth. One Studio. One Relationship.",
-    "description": "We work closely with our clients to turn their goals into unified design experiences that feel right and work seamlessly.",
-    "compact": false,
-    "tagsRender": {
-      "heading": "helping",
-      "tags": [
-        { "name": "Helping" },
-        { "name": "Entrepreneur" },
-        { "name": "brnads" },
-        { "name": "SaaS Teams" }
-      ]
-    },
-    "imageList": {
-      "title": "Design That Thinks \n Beyond Today",
-      "list": [
+[
+  {
+    "name": "editorialBanner",
+    "data": {
+      "title": "Every Axis. One Vision.",
+      "subTitle": "Where Every Dimension of Design Comes Together",
+      "description": "At Axis Studio, we bring every axis of design including 2D & 3D digital \n experiences into one focused, aligned space",
+      "bgImages": [
         {
-          "image": {
-            "src": "/images/time-flask.png",
-            "width": 112,
-            "height": 112,
-            "alt": "image "
-          },
-          "text": "We think long-term."
+          "image": "/images/vectors/banner.png",
+          "position": "left 250px"
+        }
+      ],
+      "cookieBot": false,
+      "wheel": {
+        "text": " Watch our showreel •"
+      },
+      "meshVector": {
+        "image": "/images/vectors/mesh-vector.svg",
+        "position": "center top"
+      },
+      "slides": [
+        {
+          "image": "/images/profiles/profile-one.png",
+          "bgColor": "#596E85",
+          "title": "Olena Kovalenko",
+          "subTitle": "CEO",
+          "message": "Ola!"
         },
         {
-          "image": { "src": "/images/bulb.png", "width": 112, "height": 112, "alt": "image " },
-          "text": "We design with intention."
+          "image": "/images/profiles/profile-two.png",
+          "bgColor": "#596E85",
+          "title": "Raja Muhammad",
+          "subTitle": "CEO",
+          "message": "Ola!"
         },
         {
-          "image": { "src": "/images/bars.png", "width": 112, "height": 112, "alt": "image " },
-          "text": "We care about outcomes, not just aesthetics."
+          "image": "/images/profiles/profile-one.png",
+          "bgColor": "#596E85",
+          "title": "Olena Kovalenko",
+          "subTitle": "CEO",
+          "message": "Ola!"
         }
       ]
     }
   },
-  "editorialOneColumnScrollable": {
-    "slides": [
-      {
-        "logo": "/logos/case-studies/mooventis.svg",
-        "backgroundColor": "#8D63E7",
-        "image": "/images/case-studies/mooventis.png",
-        "title": "Building a Data-Driven Fleet & Route Management Solution",
-        "cta": {
-          "title": "View case study",
-          "href": "#",
-          "className": "bg-white text-primary! font-normal mb-8 md:mb-[77px]"
+  {
+    "name": "editorialBrands",
+    "data": {
+      "title": "Trusted by growing brands",
+      "brands": [
+        {
+          "image": "/logos/partners/mooventis.svg",
+          "brandName": "Mooventis"
         },
-        "testimonial": {
-          "avatar": "/images/avatar.png",
-          "authorName": "Bedad Sofien",
-          "content": "Much respect you really master your subject, and it shows. Honestly, nothing to say except bravo!",
-          "rating": 4,
-          "authorTitle": "CEO @ MOOVENTIS"
-        }
-      },
-      {
-        "logo": "/logos/case-studies/proctor-parhai.svg",
-        "backgroundColor": "#008080",
-        "image": "/images/case-studies/proctor-parhai.png",
-        "title": "Building a Universal Online Testing platform for everyone.",
-        "cta": {
-          "title": "Coming Soon",
-          "href": "#",
-          "className": "bg-white text-primary! font-normal mb-8 md:mb-[77px]"
+        {
+          "image": "/logos/partners/galaxy.svg",
+          "brandName": "Galaxy"
         },
-        "testimonial": {
-          "avatar": "/images/avatar.png",
-          "authorName": "Dr jawwad shamsi",
-          "content": "Much respect you really master your subject, and it shows. Honestly, nothing to say except bravo!",
-          "rating": 4,
-          "authorTitle": "CEO @ PROCTOR PARHAI"
-        }
-      },
-      {
-        "logo": "/logos/case-studies/little-book.svg",
-        "backgroundColor": "#55AFE9",
-        "image": "/images/case-studies/little-book.png",
-        "title": "Revamp the new ebook reading Experience of eCommerce. ",
-        "cta": {
-          "title": "Coming Soon",
-          "href": "#",
-          "className": "bg-white text-primary! font-normal mb-8 md:mb-[77px]"
+        {
+          "image": "/logos/partners/hana.svg",
+          "brandName": "Hana"
         },
-        "testimonial": {
-          "avatar": "/images/avatar.png",
-          "authorName": "Maniza Naqvi",
-          "content": "I really appreciated the effort they put into the project and how easy they made it for users to use.",
-          "rating": 4,
-          "authorTitle": "CEO @ LITTLEBOOK"
+        {
+          "image": "/logos/partners/james.svg",
+          "brandName": "james"
+        },
+        {
+          "image": "/logos/partners/markel.svg",
+          "brandName": "markel"
+        },
+        {
+          "image": "/logos/partners/proctor-parhai.svg",
+          "brandName": "proctor parhai"
+        },
+        {
+          "image": "/logos/partners/proroster.svg",
+          "brandName": "proroster"
+        },
+        {
+          "image": "/logos/partners/social-dreams.svg",
+          "brandName": "social dreams"
+        },
+        {
+          "image": "/logos/partners/ux-bolt.svg",
+          "brandName": "ux bolt"
+        },
+        {
+          "image": "/logos/partners/vitrivian.svg",
+          "brandName": "vitrivian"
+        },
+        {
+          "image": "/logos/partners/rainbow.svg",
+          "brandName": "rainbow"
+        },
+        {
+          "image": "/logos/partners/kuickapp.svg",
+          "brandName": "Kuickapp"
+        },
+        {
+          "image": "/logos/partners/little-book.svg",
+          "brandName": "little book"
+        },
+        {
+          "image": "/logos/partners/tutor-bay.svg",
+          "brandName": "titor bay"
+        },
+        {
+          "image": "/logos/partners/depharma.svg",
+          "brandName": "De pharma"
         }
-      }
-    ]
+      ]
+    }
   },
-  "testimonialSlider": {
-    "title": "Trusted by Clients for \n Quality That Delivers",
-    "testimonials": [
-      {
-        "avatar": "/images/profiles/profile-one.png",
-        "authorName": "Maaz farooqi",
-        "authorTitle": "CEO @ LITTLEBOOK",
-        "rating": 5,
-        "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
+  {
+    "name": "editorialInfiniteSlider",
+    "data": {
+      "title": "If Design Feels Scattered, You’re Not Alone!",
+      "showDescription": true,
+      "description": "Most teams come \n to us feeling this:",
+      "slides": [
+        {
+          "type": "minimalist",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "title": "Our UI looks good, but it doesn’t convert.",
+          "image": {
+            "src": "/images/vectors/ribbon-light-orange.png",
+            "alt": "ribbon orange"
+          }
+        },
+        {
+          "type": "minimalist",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "title": "We hired multiple designers, but nothing feels connected.",
+          "image": {
+            "src": "/images/vectors/square-grey.png",
+            "alt": "kuickapp showcase image"
+          }
+        },
+        {
+          "type": "minimalist",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "title": "Our branding doesn’t match our product.",
+          "image": {
+            "src": "/images/vectors/circle-grey.png",
+            "alt": "kuickapp showcase image"
+          }
+        },
+        {
+          "type": "minimalist",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "title": "We know what we want, we just can’t bring it together",
+          "image": {
+            "src": "/images/vectors/ribbon-grey.png",
+            "alt": "kuickapp showcase image"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "editorialTwoColumn",
+    "data": {
+      "title": "With Axis Studio, you get a single creative partner that understands your product deeply and grows with you.",
+      "subTitle": "Tailored to your vision, goals, and growth. One Studio. One Relationship.",
+      "description": "We work closely with our clients to turn their goals into unified design experiences that feel right and work seamlessly.",
+      "compact": false,
+      "tagsRender": {
+        "heading": "helping",
+        "tags": [
+          { "name": "Helping" },
+          { "name": "Entrepreneur" },
+          { "name": "brnads" },
+          { "name": "SaaS Teams" }
+        ]
       },
-      {
-        "avatar": "/images/profiles/profile-two.png",
-        "authorName": "Maaz farooqi",
-        "authorTitle": "CEO @ LITTLEBOOK",
-        "rating": 5,
-        "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
-      },
-      {
-        "avatar": "/images/profiles/profile-one.png",
-        "authorName": "Maaz farooqi",
-        "authorTitle": "CEO @ LITTLEBOOK",
-        "rating": 5,
-        "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
-      },
-      {
-        "avatar": "/images/profiles/profile-one.png",
-        "authorName": "Maaz farooqi",
-        "authorTitle": "CEO @ LITTLEBOOK",
-        "rating": 5,
-        "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
-      },
-      {
-        "avatar": "/images/profiles/profile-one.png",
-        "authorName": "Maaz farooqi",
-        "authorTitle": "CEO @ LITTLEBOOK",
-        "rating": 5,
-        "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
+      "imageList": {
+        "title": "Design That Thinks \n Beyond Today",
+        "list": [
+          {
+            "image": {
+              "src": "/images/time-flask.png",
+              "width": 112,
+              "height": 112,
+              "alt": "image "
+            },
+            "text": "We think long-term."
+          },
+          {
+            "image": { "src": "/images/bulb.png", "width": 112, "height": 112, "alt": "image " },
+            "text": "We design with intention."
+          },
+          {
+            "image": { "src": "/images/bars.png", "width": 112, "height": 112, "alt": "image " },
+            "text": "We care about outcomes, not just aesthetics."
+          }
+        ]
       }
-    ]
+    }
+  },
+  {
+    "name": "expertiseSlider",
+    "data": {
+      "title": "Field of Expertise",
+      "showDescription": false,
+      "slides": [
+        {
+          "bgColor": "#F95E27",
+          "design": "2D",
+          "serviceCode": "AXIS-001",
+          "title": "2D Design",
+          "description": "Clear visuals that communicate fast from branding to marketing assets, designed to be consistent, scalable, and instantly recognizable.",
+          "cta": {},
+          "primaryImage": {
+            "src": "/images/vectors/squares-dotted.svg",
+            "alt": "image primary",
+            "width": 300,
+            "height": 300
+          },
+          "secondaryImage": {
+            "src": "/images/vectors/square-dotted-sm.svg",
+            "alt": "image secondary",
+            "width": 104,
+            "height": 104
+          }
+        },
+        {
+          "bgColor": "#FFAA51",
+          "design": "3D",
+          "serviceCode": "AXIS-001",
+          "title": "3D Design",
+          "description": "High-impact 3D visuals that add depth, realism, and wow-factor built for products, spaces, and immersive brand experiences",
+          "cta": {},
+          "primaryImage": {
+            "src": "/images/vectors/circle-dotted.svg",
+            "alt": "image primary",
+            "width": 300,
+            "height": 300
+          },
+          "secondaryImage": {
+            "src": "/images/vectors/traingle-dotted-sm.svg",
+            "alt": "image secondary",
+            "width": 104,
+            "height": 104
+          }
+        },
+        {
+          "bgColor": "#596E85",
+          "design": "UI UX",
+          "serviceCode": "AXIS-001",
+          "title": "UI UX Design",
+          "description": "User-centered digital experiences that are intuitive, scalable, and conversion-focused designed to look good and work flawlessly.",
+          "cta": {},
+          "primaryImage": {
+            "src": "/images/vectors/bars-dotted.svg",
+            "alt": "image primary",
+            "width": 300,
+            "height": 300
+          },
+          "secondaryImage": {
+            "src": "/images/vectors/bars-dotted-sm.svg",
+            "alt": "image secondary",
+            "width": 104,
+            "height": 104
+          }
+        },
+        {
+          "bgColor": "#001524",
+          "design": "Motion Graphics",
+          "serviceCode": "AXIS-001",
+          "title": "Motion Graphics",
+          "description": "Purpose-driven motion that brings ideas to life enhancing storytelling, usability, and engagement across digital touchpoints.",
+          "cta": {},
+          "primaryImage": {
+            "src": "/images/vectors/circle-dotted.svg",
+            "alt": "image primary",
+            "width": 300,
+            "height": 300
+          },
+          "secondaryImage": {
+            "src": "/images/vectors/circle-dotted-sm.svg",
+            "alt": "image secondary",
+            "width": 104,
+            "height": 104
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "editorialPhases",
+    "data": {
+      "title": "How We Build Faster, Smarter",
+      "description": "An intelligent, AI-enabled design process that replaces outdated methods with speed, accuracy, and performance-driven execution.",
+      "phases": [
+        {
+          "title": "Discovery / Ideation Phase",
+          "description": "We reveal revelations and mold brands, websites, and products by engaging in a process of discovery and scrutiny",
+          "tags": [
+            { "name": "User of the Product", "icon": { "name": "tick.svg", "size": 24 } },
+            { "name": "Competitor & Market Analysis", "icon": { "name": "tick.svg", "size": 24 } },
+            { "name": "Business Goals", "icon": { "name": "tick.svg", "size": 24 } }
+          ]
+        },
+        {
+          "title": "Design / Visual Element",
+          "description": "We narrate distinct brand narratives, create exceptional visual personas, and sculpt user-centric digital journeys.",
+          "tags": [
+            { "name": "Ideation & Wireframe", "icon": { "name": "tick.svg", "size": 24 } },
+            {
+              "name": "Style Guide & Component Design",
+              "icon": { "name": "tick.svg", "size": 24 }
+            },
+            { "name": "Visual Design & Prototype", "icon": { "name": "tick.svg", "size": 24 } }
+          ]
+        },
+        {
+          "title": "Build / Product Development",
+          "description": "Supported by cutting-edge technologies, we construct websites and products that enhance functionality, ensure reliability, and adapt over time.",
+          "tags": [
+            { "name": "Frontend Development", "icon": { "name": "tick.svg", "size": 24 } },
+            { "name": "Backend Development", "icon": { "name": "tick.svg", "size": 24 } },
+            { "name": "Test & Publish", "icon": { "name": "tick.svg", "size": 24 } }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "editorialOneColumnScrollable",
+    "data": {
+      "slides": [
+        {
+          "logo": "/logos/case-studies/mooventis.svg",
+          "backgroundColor": "#8D63E7",
+          "image": "/images/case-studies/mooventis-dashboard.png",
+          "title": "Building a Data-Driven Fleet & Route Management Solution",
+          "cta": {
+            "title": "View case study",
+            "href": "#",
+            "className": "bg-white text-primary! font-normal mb-8 md:mb-[77px]"
+          },
+          "testimonial": {
+            "avatar": "/images/avatar.png",
+            "authorName": "Bedad Sofien",
+            "content": "Much respect you really master your subject, and it shows. Honestly, nothing to say except bravo!",
+            "rating": 4,
+            "authorTitle": "CEO @ MOOVENTIS"
+          }
+        },
+        {
+          "logo": "/logos/case-studies/proctor-parhai.svg",
+          "backgroundColor": "#008080",
+          "image": "/images/case-studies/proctor-parhai.png",
+          "title": "Building a Universal Online Testing platform for everyone.",
+          "cta": {
+            "title": "Coming Soon",
+            "href": "#",
+            "className": "bg-white text-primary! font-normal mb-8 md:mb-[77px]"
+          },
+          "testimonial": {
+            "avatar": "/images/avatar.png",
+            "authorName": "Dr jawwad shamsi",
+            "content": "Much respect you really master your subject, and it shows. Honestly, nothing to say except bravo!",
+            "rating": 4,
+            "authorTitle": "CEO @ PROCTOR PARHAI"
+          }
+        },
+        {
+          "logo": "/logos/case-studies/little-book.svg",
+          "backgroundColor": "#55AFE9",
+          "image": "/images/case-studies/little-book.png",
+          "title": "Revamp the new ebook reading Experience of eCommerce. ",
+          "cta": {
+            "title": "Coming Soon",
+            "href": "#",
+            "className": "bg-white text-primary! font-normal mb-8 md:mb-[77px]"
+          },
+          "testimonial": {
+            "avatar": "/images/avatar.png",
+            "authorName": "Maniza Naqvi",
+            "content": "I really appreciated the effort they put into the project and how easy they made it for users to use.",
+            "rating": 4,
+            "authorTitle": "CEO @ LITTLEBOOK"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "editorialInfiniteSlider",
+    "data": {
+      "title": "Where Strategy Meets Conversion-Focused Design",
+      "showDescription": true,
+      "description": "Each landing page you see here is designed to tell a story, build trust, and push users toward one clear goal — growth.",
+      "slides": [
+        {
+          "type": "simple",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "image": {
+            "src": "/images/showcase/kuick-app.png",
+            "alt": "kuickapp showcase image"
+          }
+        },
+        {
+          "type": "simple",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "image": {
+            "src": "/images/showcase/social-dreams.png",
+            "alt": "social dreams showcase image"
+          }
+        },
+        {
+          "type": "simple",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "image": {
+            "src": "/images/showcase/proctor-parhai.png",
+            "alt": "proctor parhai showcase image"
+          }
+        },
+        {
+          "type": "simple",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "image": {
+            "src": "/images/showcase/proctor-parhai.png",
+            "alt": "proctor parhai showcase image"
+          }
+        },
+        {
+          "type": "simple",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "image": {
+            "src": "/images/showcase/proctor-parhai.png",
+            "alt": "proctor parhai showcase image"
+          }
+        },
+        {
+          "type": "simple",
+          "bordered": true,
+          "borderColor": "#F4F4F4",
+          "borderWidth": 4,
+          "image": {
+            "src": "/images/showcase/social-dreams.png",
+            "alt": "social dreams showcase image"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "testimonialSlider",
+    "data": {
+      "title": "Trusted by Clients for \n Quality That Delivers",
+      "testimonials": [
+        {
+          "avatar": "/images/profiles/profile-one.png",
+          "authorName": "Maaz farooqi",
+          "authorTitle": "CEO @ LITTLEBOOK",
+          "rating": 5,
+          "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
+        },
+        {
+          "avatar": "/images/profiles/profile-two.png",
+          "authorName": "Maaz farooqi",
+          "authorTitle": "CEO @ LITTLEBOOK",
+          "rating": 5,
+          "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
+        },
+        {
+          "avatar": "/images/profiles/profile-one.png",
+          "authorName": "Maaz farooqi",
+          "authorTitle": "CEO @ LITTLEBOOK",
+          "rating": 5,
+          "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
+        },
+        {
+          "avatar": "/images/profiles/profile-one.png",
+          "authorName": "Maaz farooqi",
+          "authorTitle": "CEO @ LITTLEBOOK",
+          "rating": 5,
+          "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
+        },
+        {
+          "avatar": "/images/profiles/profile-one.png",
+          "authorName": "Maaz farooqi",
+          "authorTitle": "CEO @ LITTLEBOOK",
+          "rating": 5,
+          "description": "Axissstudio demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity. They’re very well thought out and have an excellent response to feedback. All of these qualities are why they’re our go-to user experience experts."
+        }
+      ]
+    }
   }
-}
+]
